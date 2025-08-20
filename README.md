@@ -15,6 +15,8 @@ v2.0 - New Portfolio Created
 
 v2.01 - Updated README.md & index.html
 
+v2.02 - Fixed Super Mario Font
+
 ## Inspiration
 
 [Sooah's Portfolio](https://www.sooahs-room-folio.com/)
