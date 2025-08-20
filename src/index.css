@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'MarioFont';
-  src: url('./public/fonts/SuperMario256.woff2') format('woff2');
+  src: url('/fonts/SuperMario256.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
