@@ -13,9 +13,14 @@ pnpm run dev
 
 v2.0 - New Portfolio Created
 
+v2.01 - Updated README.md & index.html
+
 ## Inspiration
 
 [Sooah's Portfolio](https://www.sooahs-room-folio.com/)
+
 [Rachel Wei's Portfolio](https://rachelqrwei.ca/)
+
 [Rafael Niebles Portfolio](https://www.rnieb.dev/)
+
 [Katherina Dayaon's Portfolio](https://katherinadayaon.me/)
