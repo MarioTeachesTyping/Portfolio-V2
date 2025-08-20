@@ -13,9 +13,7 @@ pnpm run dev
 
 v2.0 - New Portfolio Created
 
-v2.01 - Updated README.md & index.html
-
-v2.02 - Fixed Super Mario Font
+v2.01 - Fixed Super Mario Font
 
 ## Inspiration
 
