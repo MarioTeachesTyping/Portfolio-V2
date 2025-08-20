@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* ----------- Styling ----------- */
+
+:root {
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'MarioFont';
+  src: url('./public/fonts/SuperMario256.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------- Animations ----------- */
+
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-5deg) scale(1.05); }
+  75% { transform: rotate(5deg) scale(1.05); }
+}
+
+.wiggle-hover:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  16% { color: orange; }
+  33% { color: yellow; }
+  50% { color: green; }
+  66% { color: blue; }
+  83% { color: indigo; }
+  100% { color: violet; }
+}
+
+.rainbow-text {
+  animation: rainbow 4s linear infinite;
+}
+
+@keyframes modal-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modal-fade-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.modal-enter {
+  animation: modal-fade-in 0.25s ease-out forwards;
+}
+
+.modal-exit {
+  animation: modal-fade-out 0.2s ease-in forwards;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* grow a little */
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8); /* white glow */
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+*/
