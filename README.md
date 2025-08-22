@@ -11,9 +11,11 @@ pnpm run dev
 
 ## Timeline
 
-v2.0 - New Portfolio Created
+v2.0  - New Portfolio Created
 
-v2.01 - Fixed Super Mario Font
+v2.01 - Added Super Mario Font
+
+v2.02 - Added More Animations & Fixed Issues
 
 ## Inspiration
 

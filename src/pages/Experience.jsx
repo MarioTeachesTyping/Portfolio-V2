@@ -54,8 +54,9 @@ export default function Experience()
       description: [
         "Researched AI integration for Physics-Informed Neural Networks to improve computational efficiency.",
         "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques.",
+        "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
       ],
-      note: "I love rocket ships.",
+      note: "I love rocket ships. Easily, my most unique and difficult research as of right now.",
       logo: "/images/ucf-mec.jpg",
     },
     {
@@ -79,7 +80,7 @@ export default function Experience()
         {experiences.map((exp, i) => (
           <div
             key={i}
-            className="border-2 border-white bg-black text-white p-6 shadow-lg flex justify-between"
+            className="border-2 border-white bg-black text-white p-6 shadow-lg flex justify-between experience-card"
           >
             {/* Left Side */}
 

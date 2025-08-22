@@ -27,7 +27,6 @@
 
 /* ----------- Animations ----------- */
 
-
 @keyframes wiggle {
   0%, 100% { transform: rotate(0deg) scale(1); }
   25% { transform: rotate(-5deg) scale(1.05); }
@@ -82,13 +81,22 @@
   animation: modal-fade-out 0.2s ease-in forwards;
 }
 
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8);
+}
+
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* grow a little */
-  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8); /* white glow */
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8);
 }
 
 .spin {

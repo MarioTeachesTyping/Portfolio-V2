@@ -19,9 +19,9 @@ export default function About()
       <img
         src="/images/pfp.jpg"
         alt="PFP"
-        className="w-78 h-80 border-12 border-white mx-auto block mb-6 mt-6"
+        className="w-78 h-80 border-12 border-white mx-auto block mb-6 mt-6 experience-card"
       />
-      <h2 className="text-5xl mb-10 text-center font-normal" 
+      <h2 className="text-6xl mb-10 text-center font-normal" 
           style={{ fontFamily: 'MarioFont' }}>
         Anthony Terry
       </h2>
@@ -51,7 +51,7 @@ export default function About()
       </div>
 
       <div className="mt-10">
-        <h3 className="text-3xl text-center mb-6">Learning and getting Better at:</h3>
+        <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
 
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <FaNodeJs className="w-16 h-16 wiggle-hover" />

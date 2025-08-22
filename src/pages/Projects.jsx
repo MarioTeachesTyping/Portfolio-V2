@@ -8,8 +8,8 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino,
-         SiOpenai, SiLangchain, SiTailwindcss, SiJavascript, 
-         SiTypescript, SiPrisma, SiBlender, SiWebgl
+         SiOllama, SiLangchain, SiTailwindcss, SiJavascript, 
+         SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite
 } from 'react-icons/si';
 
 export default function Projects() 
@@ -28,27 +28,27 @@ export default function Projects()
       name: "MarioGPT",
       image: "/images/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
-      tech: [<FaPython key="python" />, <SiOpenai key="openai" />,
-             <BiLogoPostgresql key="postgresql" />, <FaNodeJs key="nodejs" />,
-             <SiLangchain key="langchain" />, <FaReact key="react" />
+      tech: [<FaPython key="python" />, <SiOllama key="llama" />,
+             <SiLangchain key="langchain" />, <FaNodeJs key="nodejs" />,
+             <BiLogoPostgresql key="postgresql" />, <FaReact key="react" />
       ]
     },
     {
       name: "MyGameList",
       image: "/images/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<FaReact key="react" />, <SiTailwindcss key="tailwindcss" />,
-             <SiTypescript key="typescript" />, <TbBrandNextjs key="nextjs" />,
-             <SiPrisma key="prisma" />
+      tech: [<TbBrandNextjs key="nextjs" />, <FaReact key="react" />, 
+             <SiTailwindcss key="tailwindcss" />, <SiTypescript key="typescript" />, 
+             <BiLogoPostgresql key="postgresql" />, <SiPrisma key="prisma" />
       ]
     },
     {
       name: "Portfolio-V2",
       image: "/images/portfolio.jpg",
-      description: "Your looking at it.",
-      tech: [<FaReact key="react" />, <SiTailwindcss key="tailwindcss" />,
-             <SiJavascript key="javascript" />, <TbBrandThreejs key="threejs" />,
-             <SiBlender key="blender" />
+      description: "You're looking at it.",
+      tech: [<SiVite key="vite" />, <FaReact key="react" />, 
+             <SiTailwindcss key="tailwindcss" />, <SiJavascript key="javascript" />, 
+             <TbBrandThreejs key="threejs" />, <SiBlender key="blender" />
       ]
     },
     {
