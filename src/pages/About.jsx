@@ -45,7 +45,7 @@ export default function About()
           <SiTypescript className="w-16 h-16 wiggle-hover" />
           <FaReact className="w-16 h-16 wiggle-hover" />
           <SiTailwindcss className="w-16 h-16 wiggle-hover" />
-          <SiBlender className="w-16 h-16 wiggle-hover" />
+          <BiLogoPostgresql className="w-16 h-16 wiggle-hover" />
           <FaUnity className="w-16 h-16 wiggle-hover" />
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function About()
 
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <FaNodeJs className="w-16 h-16 wiggle-hover" />
-          <BiLogoPostgresql className="w-16 h-16 wiggle-hover" />
+          <SiBlender className="w-16 h-16 wiggle-hover" />
           <SiPytorch className="w-16 h-16 wiggle-hover" />
           <SiTensorflow className="w-16 h-16 wiggle-hover" />
           <FaFigma className="w-16 h-16 wiggle-hover" />
