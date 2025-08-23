@@ -2,7 +2,7 @@
 
 It's cooler.
 
-![Web Screenshot](/images/website.jpg "Website Screenshot")
+![Web Screenshot](./public/images/website.jpg "Website Screenshot")
 
 ## Instructions
 
