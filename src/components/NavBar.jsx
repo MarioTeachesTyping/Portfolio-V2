@@ -83,12 +83,12 @@ export default function NavBar()
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
         >
-          <img src="/images/icon.png" alt="Menu" className="w-7 h-7" />
+          <img src="/images/icon.png" alt="Menu" className="w-11 h-11" />
         </button>
       </div>
 
       <div
-        className={`md:hidden fixed top-[72px] right-4 left-4 z-50 origin-top
+        className={`md:hidden fixed top-[72px] right-0 left-0 z-50 origin-top
                     bg-black border-3 border-white shadow-lg
                     transition-transform transition-opacity duration-200
                     ${menuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
