@@ -2,6 +2,8 @@
 
 It's cooler.
 
+![Web Screenshot](/images/website.jpg "Website Screenshot")
+
 ## Instructions
 
 ```
