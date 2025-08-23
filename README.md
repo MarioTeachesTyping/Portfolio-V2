@@ -11,7 +11,7 @@ pnpm run dev
 
 ## Timeline
 
-v2.0  - New Portfolio Created
+v2.00 - New Portfolio Created
 
 v2.01 - Added Super Mario Font
 
