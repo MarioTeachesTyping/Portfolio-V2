@@ -19,6 +19,8 @@ v2.01 - Added Super Mario Font
 
 v2.02 - Added More Animations & Fixed Issues
 
+v2.10 - Loading...
+
 ## Inspiration
 
 [Sooah's Portfolio](https://www.sooahs-room-folio.com/)
