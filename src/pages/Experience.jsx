@@ -56,7 +56,7 @@ export default function Experience()
         "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques.",
         "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
       ],
-      note: "I love rocket ships. Easily, my most unique and difficult research as of right now.",
+      note: "I love rocket ships. Easily, my most difficult research as of right now.",
       logo: "/images/ucf-mec.jpg",
     },
     {
@@ -76,6 +76,7 @@ export default function Experience()
   return (
     <div>
       <h2 className="text-5xl text-center mb-9 mt-3 font-bold">My Experience</h2>
+      <p className="text-xl text-center mb-11 mt-2">Thank you to everybody who has supported me along the way in achieving opportunities like this. Especially my family and friends.</p>
       <div className="space-y-6">
         {experiences.map((exp, i) => (
           <div

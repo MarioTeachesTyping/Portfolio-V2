@@ -7,6 +7,7 @@ import { FaPython, FaReact, FaNodeJs } from 'react-icons/fa';
 import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
+import { RiTeamLine } from "react-icons/ri";
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino,
          SiOllama, SiLangchain, SiTailwindcss, SiJavascript, 
          SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite
@@ -22,7 +23,9 @@ export default function Projects()
       tech: [<FaPython key="python" />, <SiOpencv key="opencv" />,
              <SiMediapipe key="mediapipe" />, <SiFlask key="flask" />,
              <SiCplusplus key="cplusplus" />, <SiArduino key="arduino" />
-      ]
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 4" },
+      link: "https://devpost.com/software/formify-k8vl4r"
     },
     {
       name: "MarioGPT",
@@ -49,7 +52,8 @@ export default function Projects()
       tech: [<SiVite key="vite" />, <FaReact key="react" />, 
              <SiTailwindcss key="tailwindcss" />, <SiJavascript key="javascript" />, 
              <TbBrandThreejs key="threejs" />, <SiBlender key="blender" />
-      ]
+      ],
+      link: "https://github.com/MarioTeachesTyping/portfolio"
     },
     {
       name: "Paracosm",
@@ -58,18 +62,24 @@ export default function Projects()
       tech: [<FaUnity key="unity" />, <FaPython key="python" />, 
              <SiOpencv key="opencv" />, <SiMediapipe key="mediapipe" />, 
              <SiFlask key="flask" />, <SiWebgl key="webgl" />
-      ]
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 3" },
+      link: "https://devpost.com/software/paracosm"
     }
   ];
 
-  return (
+   return (
     <div>
       <h2 className="text-5xl font-bold mb-9 mt-3 text-center">My Projects</h2>
+      <p className="text-xl text-center mb-11 mt-2">Always trying to improve. Thank you to anybody who worked, helped, or support any of these projects.</p>
       <div className="flex justify-center gap-6 flex-wrap">
         {projects.map((project, index) => (
-          <div 
+          <a 
             key={index}
-            className="w-82 h-[450px] border-5 border-white-400 bg-black text-white p-4 flex flex-col justify-between project-card"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-82 h-[450px] border-5 border-white-400 bg-black text-white p-4 flex flex-col justify-between project-card hover:scale-105 transition-transform"
           >
             <h3 className="text-2xl font-bold text-center mb-4">{project.name}</h3>
             
@@ -85,12 +95,19 @@ export default function Projects()
             
             <p className="text-gray-300 text-md mb-4 mt-4 text-center">{project.description}</p>
             
+            {project.team && (
+              <div className="flex items-center justify-center gap-2 text-lg mb-6">
+                <span className="text-2xl">{project.team.icon}</span>
+                <span>{project.team.text}</span>
+              </div>
+            )}
+
             <div className="flex justify-center gap-3 text-4xl">
               {project.tech.map((icon, i) => (
                 <span key={i} className="wiggle-hover">{icon}</span>
               ))}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

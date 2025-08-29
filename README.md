@@ -21,6 +21,8 @@ v2.02 - Added More Animations & Fixed Issues
 
 v2.10 - Loading...
 
+v2.11 - Upgraded Experience & Projects Pages
+
 ## Inspiration
 
 [Sooah's Portfolio](https://www.sooahs-room-folio.com/)
