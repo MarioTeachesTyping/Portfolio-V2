@@ -3,6 +3,8 @@
 // ======= //
 
 import { useState } from "react";
+import { FaGithub, FaLinkedin, FaRegFileAlt } from "react-icons/fa";
+
 import Modal from "./Modal";
 import About from "../pages/About";
 import Experience from "../pages/Experience";
@@ -49,28 +51,25 @@ export default function NavBar()
             href="/images/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
             onClick={() => setMenuOpen(false)}
           >
-            <img src="/images/resume.svg" alt="Resume" className="w-10 h-10 invert hover:opacity-80 project-card" />
+            <FaRegFileAlt className="w-10 h-10 hover:opacity-80" />
           </a>
           <a
             href="https://github.com/MarioTeachesTyping"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
             onClick={() => setMenuOpen(false)}
           >
-            <img src="/images/github.svg" alt="GitHub" className="w-10 h-10 invert hover:opacity-80 project-card" />
+            <FaGithub className="w-10 h-10 hover:opacity-80" />
           </a>
           <a
             href="https://www.linkedin.com/in/aj-terry/"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
             onClick={() => setMenuOpen(false)}
           >
-            <img src="/images/linkedin.svg" alt="LinkedIn" className="w-10 h-10 invert hover:opacity-80 project-card" />
+            <FaLinkedin className="w-10 h-10 hover:opacity-80" />
           </a>
         </div>
 
@@ -111,28 +110,25 @@ export default function NavBar()
               href="/images/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 hover:opacity-80"
               onClick={() => setMenuOpen(false)}
             >
-              <img src="/images/resume.svg" alt="Resume" className="w-8 h-8 invert" />
+              <FaRegFileAlt className="w-8 h-8 hover:opacity-80" />
             </a>
             <a
               href="https://github.com/MarioTeachesTyping"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 hover:opacity-80"
               onClick={() => setMenuOpen(false)}
             >
-              <img src="/images/github.svg" alt="GitHub" className="w-8 h-8 invert" />
+              <FaGithub className="w-8 h-8 hover:opacity-80" />
             </a>
             <a
               href="https://www.linkedin.com/in/aj-terry/"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 hover:opacity-80"
               onClick={() => setMenuOpen(false)}
             >
-              <img src="/images/linkedin.svg" alt="LinkedIn" className="w-8 h-8 invert" />
+              <FaLinkedin className="w-8 h-8 hover:opacity-80" />
             </a>
           </div>
         </div>
