@@ -2,13 +2,14 @@
 // Nav Bar //
 // ======= //
 
-import { useState } from "react";
-import { FaGithub, FaLinkedin, FaRegFileAlt } from "react-icons/fa";
+import { useState, useMemo } from "react";
+import { FaGithub, FaLinkedin, FaRegFileAlt, FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 
 import Modal from "./Modal";
 import About from "../pages/About";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
+import MusicPlayer from "./MusicPlayer";
 
 export default function NavBar() 
 {
@@ -17,23 +18,55 @@ export default function NavBar()
   const [showProjects, setShowProjects] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const [muted, setMuted] = useState(true);
+
+  // Memoize the tracks array so it stays stable across re-renders.
+  const TRACKS = useMemo(() => [
+    "Space Junk Road.mp3",
+    "Stardust Sppedway (G).mp3",
+    "Beneath the Mask -rain-.mp3",
+    "Darkness Time.mp3",
+    "Nintendo (Remix).mp3",
+    "how to sleep.mp3",
+  ], []);
+
   const openAbout = () => { setShowAbout(true); setMenuOpen(false); };
   const openExperience = () => { setShowExperience(true); setMenuOpen(false); };
   const openProjects = () => { setShowProjects(true); setMenuOpen(false); };
 
   return (
     <>
+      {/* Always-mounted, headless audio player. */}
+      <MusicPlayer
+        isMuted={muted}
+        tracks={TRACKS}
+        basePath="/music/"
+        volume={1.0}
+      />
+
       <div className="w-full border-3 border-white fixed top-0 left-0 bg-black text-white flex justify-between items-center px-6 py-5 z-50">
 
         {/* Desktop */}
-
         <div className="flex items-center space-x-5">
           <img
             src="/images/icon.png"
             alt="Icon"
             className="w-12 h-12 hidden md:block wiggle-hover"
           />
-          <div className="text-xl font-bold">Anthony Terry</div>
+
+          <div className="flex items-center gap-3">
+            <div className="text-xl font-bold">Anthony Terry</div>
+
+            <button
+              type="button"
+              className="hidden md:inline-flex items-center justify-center w-14 h-9 hover:opacity-80 active:opacity-80 transition"
+              aria-label={muted ? "Unmute music" : "Mute music"}
+              onClick={() => setMuted((m) => !m)}
+              title={muted ? "Unmute music" : "Mute music"}
+            >
+              {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
+            </button>
+          </div>
         </div>
 
         <div className="hidden md:flex space-x-9 text-lg items-center">
@@ -74,7 +107,6 @@ export default function NavBar()
         </div>
 
         {/* Mobile */}
-
         <button
           type="button"
           className="md:hidden inline-flex items-center justify-center w-11 h-11 focus:outline-none wiggle-hover active:opacity-70"
@@ -94,13 +126,13 @@ export default function NavBar()
       >
         <div className="p-3 divide-y divide-white/10">
           <div className="flex flex-col py-2">
-            <button className="text-left px-3 py-2 hover:bg-white/10" onClick={openAbout}>
+            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openAbout}>
               About
             </button>
-            <button className="text-left px-3 py-2 hover:bg-white/10" onClick={openExperience}>
+            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openExperience}>
               Experience
             </button>
-            <button className="text-left px-3 py-2 hover:bg-white/10" onClick={openProjects}>
+            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openProjects}>
               Projects
             </button>
           </div>
@@ -112,7 +144,7 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaRegFileAlt className="w-8 h-8 hover:opacity-80" />
+              <FaRegFileAlt className="w-10 h-10 hover:opacity-80" />
             </a>
             <a
               href="https://github.com/MarioTeachesTyping"
@@ -120,7 +152,7 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaGithub className="w-8 h-8 hover:opacity-80" />
+              <FaGithub className="w-10 h-10 hover:opacity-80" />
             </a>
             <a
               href="https://www.linkedin.com/in/aj-terry/"
@@ -128,14 +160,22 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaLinkedin className="w-8 h-8 hover:opacity-80" />
+              <FaLinkedin className="w-10 h-10 hover:opacity-80" />
             </a>
+            <button
+              type="button"
+              className="inline-flex items-center justify-center w-10 h-10 hover:opacity-80 active:opacity-80 transition"
+              aria-label={muted ? "Unmute music" : "Mute music"}
+              onClick={() => setMuted((m) => !m)}
+              title={muted ? "Unmute music" : "Mute music"}
+            >
+              {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
+            </button>
           </div>
         </div>
       </div>
 
       {/* Modals */}
-      
       <Modal isOpen={showAbout} onClose={() => { setShowAbout(false); setMenuOpen(false); }}>
         <About />
       </Modal>
