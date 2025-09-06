@@ -17,7 +17,9 @@ v2.00 - New Portfolio Created
 
 v2.01 - Super Mario Font
 
-v2.10 - Loading...
+v2.02 - Loading...
+
+v2.10 - Music Player
 
 ## Inspiration
 
