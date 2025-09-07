@@ -13,11 +13,11 @@ export default function Experience()
       date: "May 2025 - Present",
       location: "Jacksonville, FL",
       description: [
-        "Built QueryGPT core features with Python, LangChain, and SQL, boosting Q&A accuracy and speed.",
         "Automated 60% of regression tests with Playwright, reducing manual effort and speeding releases.",
+        "Built QueryGPT core features with Python, LangChain, and SQL, boosting Q&A accuracy and speed.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
-      note: "Extended my internship!",
+      note: "Extended my internship! Thank you P360 and Sales Team!",
       logo: "/images/florida-blue.jpg",
     },
     {
@@ -26,7 +26,7 @@ export default function Experience()
       date: "Aug 2024 - Present",
       location: "Orlando, FL",
       description: [
-        "Managed a team of 12 to teach 300+ students professional and software development skills in workshops.",
+        "Managed a team of 13 to teach 400+ students professional and software development skills in workshops.",
         "Organized workshops with sponsor companies and clubs to create internship opportunities for students.",
         "Collaborated in organizing the 2024 Hackathon where 600+ hackers and 9+ sponsors attended.",
       ],
