@@ -10,7 +10,6 @@ export default function MusicPlayer
   tracks = [
     "Space Junk Road.mp3",
     "Stardust Speedway (G).mp3",
-    "Simpsons Hotline.mp3",
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
     "Fresh (Chill Mix).mp3",
