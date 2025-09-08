@@ -24,8 +24,10 @@ export default function NavBar()
   const TRACKS = useMemo(() => [
     "Space Junk Road.mp3",
     "Stardust Sppedway (G).mp3",
+    "Simpsons Hotline.mp3",
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
+    "Fresh (Chill Mix).mp3",
     "Nintendo (Remix).mp3",
     "how to sleep.mp3",
   ], []);
