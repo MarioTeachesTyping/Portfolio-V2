@@ -9,7 +9,7 @@ export default function MusicPlayer
   isMuted = false,
   tracks = [
     "Space Junk Road.mp3",
-    "Stardust Sppedway (G).mp3",
+    "Stardust Speedway (G).mp3",
     "Simpsons Hotline.mp3",
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
