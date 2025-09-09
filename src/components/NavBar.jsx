@@ -61,9 +61,7 @@ export default function NavBar()
             <button
               type="button"
               className="hidden md:inline-flex items-center justify-center w-14 h-9 hover:opacity-80 active:opacity-80 transition"
-              aria-label={muted ? "Unmute music" : "Mute music"}
               onClick={() => setMuted((m) => !m)}
-              title={muted ? "Unmute music" : "Mute music"}
             >
               {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
             </button>
@@ -166,9 +164,7 @@ export default function NavBar()
             <button
               type="button"
               className="inline-flex items-center justify-center w-10 h-10 hover:opacity-80 active:opacity-80 transition"
-              aria-label={muted ? "Unmute music" : "Mute music"}
               onClick={() => setMuted((m) => !m)}
-              title={muted ? "Unmute music" : "Mute music"}
             >
               {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
             </button>

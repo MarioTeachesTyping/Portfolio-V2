@@ -37,16 +37,16 @@ export default function About()
         <h3 className="text-3xl text-center mb-6">What I Like to Build with:</h3>
 
         <div className="flex flex-wrap justify-center gap-8 text-white">
-          <FaPython className="w-16 h-16 wiggle-hover" />
-          <FaJava className="w-16 h-16 wiggle-hover" />
-          <SiC className="w-16 h-16 wiggle-hover" />
-          <SiCplusplus className="w-16 h-16 wiggle-hover" />
-          <SiJavascript className="w-16 h-16 wiggle-hover" />
-          <SiTypescript className="w-16 h-16 wiggle-hover" />
-          <FaReact className="w-16 h-16 wiggle-hover" />
-          <SiTailwindcss className="w-16 h-16 wiggle-hover" />
-          <BiLogoPostgresql className="w-16 h-16 wiggle-hover" />
-          <FaUnity className="w-16 h-16 wiggle-hover" />
+          <FaPython className="w-16 h-16 wiggle-hover" title="Python" />
+          <FaJava className="w-16 h-16 wiggle-hover" title="Java" />
+          <SiC className="w-16 h-16 wiggle-hover" title="C" />
+          <SiCplusplus className="w-16 h-16 wiggle-hover" title="C++" />
+          <SiJavascript className="w-16 h-16 wiggle-hover" title="JavaScript" />
+          <SiTypescript className="w-16 h-16 wiggle-hover" title="TypeScript" />
+          <FaReact className="w-16 h-16 wiggle-hover" title="React" />
+          <SiTailwindcss className="w-16 h-16 wiggle-hover" title="Tailwind CSS" />
+          <BiLogoPostgresql className="w-16 h-16 wiggle-hover" title="PostgreSQL" />
+          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
         </div>
       </div>
 
@@ -54,13 +54,13 @@ export default function About()
         <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
 
         <div className="flex flex-wrap justify-center gap-8 text-white">
-          <FaNodeJs className="w-16 h-16 wiggle-hover" />
-          <SiBlender className="w-16 h-16 wiggle-hover" />
-          <SiPytorch className="w-16 h-16 wiggle-hover" />
-          <SiTensorflow className="w-16 h-16 wiggle-hover" />
-          <FaFigma className="w-16 h-16 wiggle-hover" />
-          <TbBrandThreejs className="w-16 h-16 wiggle-hover" />
-          <SiAndroidstudio className="w-16 h-16 wiggle-hover" />
+          <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
+          <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
+          <SiPytorch className="w-16 h-16 wiggle-hover" title="PyTorch" />
+          <SiTensorflow className="w-16 h-16 wiggle-hover" title="TensorFlow" />
+          <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
+          <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
+          <SiAndroidstudio className="w-16 h-16 wiggle-hover" title="Android Studio" />
         </div>
       </div>
     </div>
