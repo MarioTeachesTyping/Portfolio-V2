@@ -23,7 +23,7 @@ export default function NavBar()
   // Memoize the tracks array so it stays stable across re-renders.
   const TRACKS = useMemo(() => [
     "Space Junk Road.mp3",
-    "Stardust Speedway (G).mp3",
+    "Space Trip Steps.mp3",
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
     "Fresh (Chill Mix).mp3",
