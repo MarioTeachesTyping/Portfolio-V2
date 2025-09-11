@@ -27,6 +27,7 @@ export default function NavBar()
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
     "Fresh (Chill Mix).mp3",
+    "Pause Menu (Pico).mp3",
     "Nintendo (Remix).mp3",
     "how to sleep.mp3",
   ], []);
