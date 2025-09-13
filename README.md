@@ -21,6 +21,8 @@ v2.02 - Loading...
 
 v2.10 - Music Player
 
+v2.20 - Top Artists
+
 ## Inspiration
 
 [Sooah's Portfolio](https://www.sooahs-room-folio.com/)
