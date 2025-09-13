@@ -3,15 +3,12 @@
 // ======== //
 
 import React from 'react';
-import { FaPython, FaReact, FaNodeJs } from 'react-icons/fa';
 import { FaUnity } from "react-icons/fa6";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine } from "react-icons/ri";
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino,
-         SiOllama, SiLangchain, SiTailwindcss, SiJavascript, 
-         SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite
-} from 'react-icons/si';
+import { BiLogoPostgresql } from "react-icons/bi";
+import { FaPython, FaReact, FaNodeJs } from 'react-icons/fa';
+import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
+import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite } from 'react-icons/si';
 
 export default function Projects() 
 {
