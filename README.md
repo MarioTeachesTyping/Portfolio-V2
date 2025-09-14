@@ -21,7 +21,7 @@ v2.02 - Loading...
 
 v2.10 - Music Player
 
-v2.20 - Top Artists
+v2.20 - Top Tracks
 
 ## Inspiration
 
