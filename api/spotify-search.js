@@ -26,7 +26,7 @@ export default async function handler(req, res)
       headers: {
         Authorization:
           "Basic " + Buffer.from(`${clientID}:${clientSecret}`).toString("base64"),
-        "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams({ grant_type: "client_credentials" }),
     });

@@ -13,7 +13,7 @@ export async function getLastFmTopTracks({ username, limit = 3 })
 
     const params = {
       method: "user.gettoptracks",
-      period: "7day",
+      period: "30day",
       user: username,
       api_key: apiKey,
       limit,
