@@ -7,6 +7,7 @@ export default async function handler(req, res)
   try 
   {
     const { q, artist } = req.query || {};
+
     if (!q || !artist) 
     {
       return res.status(400).json({ error: "Missing q or artist" });
@@ -30,6 +31,7 @@ export default async function handler(req, res)
       },
       body: new URLSearchParams({ grant_type: "client_credentials" }),
     });
+
     const tokenData = await tokenResp.json();
     const accessToken = tokenData?.access_token;
 
@@ -44,6 +46,7 @@ export default async function handler(req, res)
       type: "track",
       limit: "1",
     });
+    
     const searchResp = await fetch(
       `https://api.spotify.com/v1/search?${searchParams.toString()}`,
       { headers: { Authorization: `Bearer ${accessToken}` } }

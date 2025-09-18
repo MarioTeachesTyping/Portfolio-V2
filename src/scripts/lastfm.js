@@ -4,7 +4,7 @@
 
 import axios from "axios";
 
-// Returns [{ name, artist, playcount }] for last 7 days.
+// Returns [{ name, artist, playcount }] for last 30 days.
 export async function getLastFmTopTracks({ username, limit = 3 }) 
 {
   try 

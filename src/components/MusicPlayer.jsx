@@ -52,6 +52,7 @@ export default function MusicPlayer
   // Initialize/refresh the queue when playlist content changes.
   useEffect(() => {
     if (!playlist.length) return;
+
     if (!arraysEqual(prevPlaylistRef.current, playlist)) 
     {
       const next = shuffle(playlist);
@@ -65,6 +66,7 @@ export default function MusicPlayer
   // IMPORTANT: this does NOT depend on isMuted — so toggling mute won't reset src.
   useEffect(() => {
     const audio = audioRef.current;
+
     if (!audio || !queue.length) return;
 
     // Only set src if it's actually different to avoid resetting playback.
@@ -82,6 +84,7 @@ export default function MusicPlayer
   // Separate effect for mute/volume only; never touches src.
   useEffect(() => {
     const audio = audioRef.current;
+
     if (!audio) return;
 
     audio.volume = Math.min(Math.max(volume, 0), 1);
@@ -97,6 +100,7 @@ export default function MusicPlayer
   // When a track ends, move to the next; reshuffle when we reach the end.
   const handleEnded = () => {
     if (!queue.length) return;
+    
     if (idx < queue.length - 1) 
     {
       setIdx((i) => i + 1);

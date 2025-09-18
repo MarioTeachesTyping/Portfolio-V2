@@ -3,6 +3,7 @@
 // ======== //
 
 import React from 'react';
+
 import { FaUnity } from "react-icons/fa6";
 import { RiTeamLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -17,9 +18,8 @@ export default function Projects()
       name: "Formify",
       image: "/images/formify.jpg",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
-      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />,
-             <SiMediapipe key="mediapipe" title="MediaPipe" />, <SiFlask key="flask" title="Flask" />,
-             <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
+      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+             <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/formify-k8vl4r"
@@ -28,27 +28,24 @@ export default function Projects()
       name: "MarioGPT",
       image: "/images/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
-      tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />,
-             <SiLangchain key="langchain" title="LangChain" />, <FaNodeJs key="nodejs" title="Node.js" />,
-             <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaReact key="react" title="React" />
+      tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
+             <FaNodeJs key="nodejs" title="Node.js" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaReact key="react" title="React" />
       ]
     },
     {
       name: "MyGameList",
       image: "/images/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, 
-             <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, <SiTypescript key="typescript" title="TypeScript" />, 
-             <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
+      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
+             <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
       ]
     },
     {
       name: "Portfolio-V2",
       image: "/images/portfolio.jpg",
       description: "You're looking at it.",
-      tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, 
-             <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, <SiJavascript key="javascript" title="JavaScript" />, 
-             <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
+      tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
+             <SiJavascript key="javascript" title="JavaScript" />, <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
     },
@@ -56,9 +53,8 @@ export default function Projects()
       name: "Paracosm",
       image: "/images/paracosm.jpg",
       description: "Web-accessible program that allows users to manipulate objects in Unity created 3D environment.",
-      tech: [<FaUnity key="unity" title="Unity" />, <FaPython key="python" title="Python" />, 
-             <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
-             <SiFlask key="flask" title="Flask" />, <SiWebgl key="webgl" title="WebGL" />
+      tech: [<FaUnity key="unity" title="Unity" />, <FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, 
+             <SiMediapipe key="mediapipe" title="MediaPipe" />, <SiFlask key="flask" title="Flask" />, <SiWebgl key="webgl" title="WebGL" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 3" },
       link: "https://devpost.com/software/paracosm"

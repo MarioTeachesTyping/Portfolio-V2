@@ -12,6 +12,7 @@ export async function searchSpotifyTrack(trackName, artistName)
     const res = await axios.get("/api/spotify-search", {
       params: { q: trackName, artist: artistName },
     });
+    
     return res.data;
   } 
   catch 
