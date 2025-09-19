@@ -97,8 +97,8 @@ function TopTracks()
 
   return (
     <div className="rounded-2xl mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[75%] flex items-center justify-center flex-col mx-auto">
-      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-red-700 bg-black font-bold rounded-2xl px-6 py-2">
-        AJ&apos;s On Repeat... <FaMusic />
+      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-green-400 bg-black font-bold rounded-2xl px-6 py-2">
+        AJ's On Repeat... <FaMusic />
       </h3>
       {topTracks ? topTracksGrid : placeholder}
     </div>

@@ -61,10 +61,10 @@ export default function NavBar()
 
             <button
               type="button"
-              className="hidden md:inline-flex items-center justify-center w-14 h-9 hover:opacity-80 active:opacity-80 transition"
+              className="hidden md:inline-flex items-center justify-center w-12 h-9 hover:opacity-80 active:opacity-80 transition"
               onClick={() => setMuted((m) => !m)}
             >
-              {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
+              {muted ? <FaVolumeMute className="w-8 h-8" /> : <FaVolumeUp className="w-10 h-10" />}
             </button>
           </div>
         </div>
