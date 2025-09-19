@@ -137,7 +137,7 @@ export default function NavBar()
             </button>
           </div>
 
-          <div className="flex items-center gap-4 py-3 px-3">
+          <div className="flex items-center justify-center gap-6 py-4 px-3">
             <a
               href="/images/Resume.pdf"
               target="_blank"
