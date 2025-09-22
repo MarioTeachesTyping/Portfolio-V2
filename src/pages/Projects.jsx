@@ -9,7 +9,7 @@ import { RiTeamLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaPython, FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite } from 'react-icons/si';
+import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow } from 'react-icons/si';
 
 export default function Projects() 
 {
@@ -39,6 +39,15 @@ export default function Projects()
       tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
       ]
+    },
+    {
+      name: "Fruit Slayer",
+      image: "/images/fruit-slayer.jpg",
+      description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
+      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+             <SiTensorflow key="tensorflow" title="TensorFlow" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
+      ],
+      link: "https://devpost.com/software/fruit-slayer"
     },
     {
       name: "Portfolio-V2",
