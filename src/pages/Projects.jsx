@@ -42,7 +42,7 @@ export default function Projects()
     },
     {
       name: "Fruit Slayer",
-      image: "/images/fruit-slayer.jpg",
+      image: "/images/fruit-slayer.gif",
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
       tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiTensorflow key="tensorflow" title="TensorFlow" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
