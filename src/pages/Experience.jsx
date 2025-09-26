@@ -13,7 +13,7 @@ export default function Experience()
       date: "May 2025 - Present",
       location: "Jacksonville, FL",
       description: [
-        "Automated 60% of regression tests with Playwright, reducing manual effort and speeding releases.",
+        "Automated 60% of smoke test cases with Playwright, reducing manual effort and speeding releases.",
         "Built QueryGPT core features with Python, LangChain, and SQL, boosting Q&A accuracy and speed.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
