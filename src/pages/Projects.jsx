@@ -5,11 +5,11 @@
 import React from 'react';
 
 import { FaUnity } from "react-icons/fa6";
-import { RiTeamLine } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaPython, FaReact, FaNodeJs } from 'react-icons/fa';
+import { RiTeamLine, RiGeminiFill } from "react-icons/ri";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow } from 'react-icons/si';
+import { FaPython, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
+import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, SiNginx, SiMinio, SiPostman } from 'react-icons/si';
 
 export default function Projects() 
 {
@@ -25,19 +25,21 @@ export default function Projects()
       link: "https://devpost.com/software/formify-k8vl4r"
     },
     {
+      name: "Potara",
+      image: "/images/potara.gif",
+      description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
+      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="nginx" />,
+             <SiMinio key="minio" title="MinIO" />, <SiPostman key="postman" title="Postman" />, <FaDocker key="docker" title="Docker" />
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 4" },
+      link: "https://www.potara.art/"
+    },
+    {
       name: "MarioGPT",
       image: "/images/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
       tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
              <FaNodeJs key="nodejs" title="Node.js" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaReact key="react" title="React" />
-      ]
-    },
-    {
-      name: "MyGameList",
-      image: "/images/mygamelist.jpg",
-      description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
-             <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
       ]
     },
     {
@@ -48,6 +50,14 @@ export default function Projects()
              <SiTensorflow key="tensorflow" title="TensorFlow" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
       ],
       link: "https://devpost.com/software/fruit-slayer"
+    },
+    {
+      name: "MyGameList",
+      image: "/images/mygamelist.jpg",
+      description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
+      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
+             <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
+      ]
     },
     {
       name: "Portfolio-V2",
