@@ -32,7 +32,7 @@ export default function Projects()
              <SiMinio key="minio" title="MinIO" />, <SiPostman key="postman" title="Postman" />, <FaDocker key="docker" title="Docker" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
-      link: "https://www.potara.art/"
+      link: "https://potara.art/"
     },
     {
       name: "MarioGPT",
