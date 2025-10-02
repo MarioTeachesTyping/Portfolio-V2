@@ -4,10 +4,11 @@
 
 import React, { useEffect, useState } from "react";
 
+import { SiBruno } from "react-icons/si"
 import { FaUnity } from "react-icons/fa6";
 import { TbBrandThreejs } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaPython, FaJava, FaReact, FaNodeJs, FaFigma, FaMusic } from "react-icons/fa";
+import { FaPython, FaJava, FaReact, FaNodeJs, FaFigma, FaDocker, FaMusic } from "react-icons/fa";
 import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiPytorch, SiTensorflow } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
@@ -138,7 +139,7 @@ export default function About()
           <FaReact className="w-16 h-16 wiggle-hover" title="React" />
           <SiTailwindcss className="w-16 h-16 wiggle-hover" title="Tailwind CSS" />
           <BiLogoPostgresql className="w-16 h-16 wiggle-hover" title="PostgreSQL" />
-          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
+          <FaDocker className="w-16 h-16 wiggle-hover" title="Docker" />
         </div>
       </div>
 
@@ -146,12 +147,14 @@ export default function About()
         <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
+          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
           <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
           <SiPytorch className="w-16 h-16 wiggle-hover" title="PyTorch" />
           <SiTensorflow className="w-16 h-16 wiggle-hover" title="TensorFlow" />
           <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
           <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
           <SiAndroidstudio className="w-16 h-16 wiggle-hover" title="Android Studio" />
+          <SiBruno className="w-16 h-16 wiggle-hover" title="Bruno" />
         </div>
       </div>
 
