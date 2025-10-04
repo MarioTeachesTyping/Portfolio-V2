@@ -3,6 +3,7 @@
 // ============= //
 
 import React, { useEffect, useState } from 'react';
+import { IoCloseCircleOutline } from 'react-icons/io5';
 
 export default function Modal({ isOpen, onClose, children }) 
 {
@@ -41,9 +42,9 @@ export default function Modal({ isOpen, onClose, children })
       >
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-400 hover:text-white text-5xl"
+          className="absolute top-4 right-4 text-white hover:opacity-80"
         >
-          &times;
+          <IoCloseCircleOutline size={40} />
         </button>
         {children}
       </div>
