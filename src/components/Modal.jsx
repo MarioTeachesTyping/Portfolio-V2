@@ -42,7 +42,7 @@ export default function Modal({ isOpen, onClose, children })
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:opacity-80"
+          className="absolute top-4 right-4 text-white hover:opacity-80 transition-transform duration-200 hover:scale-110"
         >
           <IoCloseCircleOutline size={40} />
         </button>
