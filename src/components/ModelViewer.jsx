@@ -6,6 +6,7 @@ import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import { Stars } from '@react-three/drei';
+import { Riple } from 'react-loading-indicators';
 import * as THREE from 'three';
 
 function Model({ modelPath }) 
@@ -24,7 +25,7 @@ function Loader()
 
   return (
     <Html center style={{ pointerEvents: 'none', zIndex: 1000 }}>
-      <p className="text-white text-lg font-semibold">Loading...</p>
+      <Riple size="large" color="white" text="" textColor="white" />
     </Html>
   );
 }

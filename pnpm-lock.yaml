@@ -29,6 +29,9 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.1)
+      react-loading-indicators:
+        specifier: ^1.0.1
+        version: 1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       tailwindcss:
         specifier: ^4.1.12
         version: 4.1.12
@@ -1305,6 +1308,13 @@ packages:
     resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
+
+  react-loading-indicators@1.0.1:
+    resolution: {integrity: sha512-tmGHdzw4arI83y8VYirck1n7suvdh1LAkeLk2v2pYMAWhPesQWcexqWKh9x6jDz/XAaIX/wFKS9MdDV8sSdoVw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   react-reconciler@0.31.0:
     resolution: {integrity: sha512-7Ob7Z+URmesIsIVRjnLoDGwBEG/tVitidU0nMsqX/eeJaLY89RISO/10ERe0MqmzuKUUB1rmY+h1itMbUHg9BQ==}
@@ -2671,6 +2681,11 @@ snapshots:
   react-icons@5.5.0(react@19.1.1):
     dependencies:
       react: 19.1.1
+
+  react-loading-indicators@1.0.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+    dependencies:
+      react: 19.1.1
+      react-dom: 19.1.1(react@19.1.1)
 
   react-reconciler@0.31.0(react@19.1.1):
     dependencies:
