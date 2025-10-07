@@ -61,7 +61,7 @@ export default function Projects()
     },
     {
       name: "Portfolio-V2",
-      image: "/images/portfolio.jpg",
+      image: "/images/portfolio.gif",
       description: "You're looking at it.",
       tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiJavascript key="javascript" title="JavaScript" />, <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
