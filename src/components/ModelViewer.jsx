@@ -3,11 +3,11 @@
 // ============ //
 
 import React, { Suspense, useMemo } from 'react';
+import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import { Stars } from '@react-three/drei';
 import { Riple } from 'react-loading-indicators';
-import * as THREE from 'three';
 
 function Model({ modelPath }) 
 {
@@ -58,6 +58,14 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
           height={8}
           color="#8b5cf6"
           intensity={0.8}
+        />
+
+        <rectAreaLight
+          position={[-1, 0, 3]}
+          width={12}
+          height={8}
+          color="#8b5cf6"
+          intensity={1.8}
         />
 
         <rectAreaLight
