@@ -19,6 +19,7 @@ export default function Experience()
       ],
       note: "Extended my internship! Thank you P360 and Sales Team!",
       logo: "/images/florida-blue.jpg",
+      link: "https://www.floridablue.com/",
     },
     {
       company: "Knight Hacks",
@@ -32,6 +33,7 @@ export default function Experience()
       ],
       note: "The start of it all. Taught me so much and got me so far.",
       logo: "/images/knight-hacks.jpg",
+      link: "https://club.knighthacks.org/",
     },
     {
       company: "ISUE Lab",
@@ -58,6 +60,7 @@ export default function Experience()
       ],
       note: "I love rocket ships. Easily, my most difficult research as of right now.",
       logo: "/images/ucf-mec.jpg",
+      link: "https://mae.ucf.edu/PERL/",
     },
     {
       company: "Walgreens",
@@ -70,18 +73,24 @@ export default function Experience()
       ],
       note: "Yeah.",
       logo: "/images/walgreens.jpg",
+      link: "https://www.walgreens.com/",
     },
   ];
 
   return (
     <div>
       <h2 className="text-5xl text-center mb-9 mt-3 font-bold">My Experience</h2>
-      <p className="text-xl text-center mb-11 mt-2">Thank you to everybody who has supported me along the way in achieving opportunities like this. Especially my family and friends.</p>
+      <p className="text-xl text-center mb-11 mt-2">
+        Thank you to everybody who has supported me along the way in achieving opportunities like this. Especially my family and friends.
+      </p>
       <div className="space-y-6">
         {experiences.map((exp, i) => (
           <div
             key={i}
             className="border-2 border-white bg-black text-white p-6 shadow-lg flex justify-between experience-card"
+            onClick={() => {
+              if (exp.link) window.open(exp.link, "_blank", "noopener,noreferrer");
+            }}
           >
             {/* Left Side */}
 
