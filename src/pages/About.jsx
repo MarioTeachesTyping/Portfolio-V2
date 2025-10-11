@@ -6,10 +6,10 @@ import React, { useEffect, useState } from "react";
 
 import { SiBruno } from "react-icons/si"
 import { FaUnity } from "react-icons/fa6";
-import { TbBrandThreejs } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { FaPython, FaJava, FaReact, FaNodeJs, FaFigma, FaDocker, FaMusic } from "react-icons/fa";
-import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiPytorch, SiTensorflow } from "react-icons/si";
+import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
+import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaMusic } from "react-icons/fa";
+import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiPytorch } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
 import { searchSpotifyTrack } from "../scripts/spotify";
@@ -146,13 +146,14 @@ export default function About()
       <div className="mt-10">
         <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
-          <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
-          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
-          <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
+          <FaLinux className="w-16 h-16 wiggle-hover" title="Linux" />
+          <TbBrandNextjs className="w-16 h-16 wiggle-hover" title="Next.js" />
           <SiPytorch className="w-16 h-16 wiggle-hover" title="PyTorch" />
-          <SiTensorflow className="w-16 h-16 wiggle-hover" title="TensorFlow" />
           <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
+          <FaAws className="w-16 h-16 wiggle-hover" title="Amazon Web Services" />
           <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
+          <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
+          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
           <SiAndroidstudio className="w-16 h-16 wiggle-hover" title="Android Studio" />
           <SiBruno className="w-16 h-16 wiggle-hover" title="Bruno" />
         </div>
