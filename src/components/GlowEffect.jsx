@@ -3,10 +3,23 @@
 // =================== //
 
 import { useEffect, useRef } from 'react';
-import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
+import { useThree } from '@react-three/fiber';
 
-export function GlowEffect({ meshNames = ['Cube008', 'Cube008_1'] }) 
+// Need to figure out how to rename the meshes.
+// holy shit gotta go in blender and set the origin to geometry and re-export
+// for certain meshes like the flower pillow. tv shelves too.
+
+const DEFAULT_INTERACTIVE_MESHES = [
+    // TV
+    'Cube008',
+    'Cube008_1',
+    // Keyboard
+    'Cube041',
+    'Cube041_1',
+];
+
+export function GlowEffect({ meshNames = DEFAULT_INTERACTIVE_MESHES }) 
 {
   const { camera, scene, gl } = useThree();
   const raycasterRef = useRef(new THREE.Raycaster());

@@ -9,7 +9,7 @@ import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import { Stars } from '@react-three/drei';
 import { Riple } from 'react-loading-indicators';
 
-import { GlowEffect } from './GlowEffect';
+// import { GlowEffect } from './GlowEffect';
 
 function Model({ modelPath }) 
 {
@@ -97,7 +97,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
           <Model modelPath={modelPath} />
         </Suspense>
 
-        <GlowEffect meshNames={['Cube008', 'Cube008_1']} />
+        {/* <GlowEffect /> */}
 
         <OrbitControls
           enablePan
