@@ -103,6 +103,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
           meshNames={['Cube008', 'Cube008_1']}
           materialName="Screen"
           videoSrc="/images/kpdh.mp4"
+          delaySeconds={3}
         />
 
         <OrbitControls
