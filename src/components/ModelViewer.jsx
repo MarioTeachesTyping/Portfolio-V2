@@ -9,10 +9,22 @@ import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import { Stars } from '@react-three/drei';
 import { Riple } from 'react-loading-indicators';
 
+import { GlowEffect } from './GlowEffect';
+
 function Model({ modelPath }) 
 {
   const { scene } = useGLTF(modelPath);
   scene.position.set(0, -4, 0);
+
+  // For debugging and finding mesh names. I fucked up on blender...
+  const printHierarchy = (obj, indent = 0) => {
+    const prefix = '  '.repeat(indent);
+    console.log(`${prefix}${obj.type}: "${obj.name}" ${obj.isMesh ? '(MESH)' : ''}`);
+    obj.children.forEach(child => printHierarchy(child, indent + 1));
+  };
+  
+  printHierarchy(scene);
+
   return <primitive object={scene} />;
 }
 
@@ -84,6 +96,8 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         <Suspense fallback={<Loader />}>
           <Model modelPath={modelPath} />
         </Suspense>
+
+        <GlowEffect meshNames={['Cube008', 'Cube008_1']} />
 
         <OrbitControls
           enablePan
