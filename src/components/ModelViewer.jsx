@@ -2,7 +2,7 @@
 // Model Viewer //
 // ============ //
 
-import React, { Suspense, useMemo } from 'react';
+import React, { Suspense, useMemo, useEffect } from 'react';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
@@ -10,6 +10,7 @@ import { Stars } from '@react-three/drei';
 import { Riple } from 'react-loading-indicators';
 
 // import { GlowEffect } from './GlowEffect';
+import { ScreenVideo } from './ScreenVideo';
 
 function Model({ modelPath }) 
 {
@@ -17,13 +18,12 @@ function Model({ modelPath })
   scene.position.set(0, -4, 0);
 
   // For debugging and finding mesh names. I fucked up on blender...
-  const printHierarchy = (obj, indent = 0) => {
-    const prefix = '  '.repeat(indent);
-    console.log(`${prefix}${obj.type}: "${obj.name}" ${obj.isMesh ? '(MESH)' : ''}`);
-    obj.children.forEach(child => printHierarchy(child, indent + 1));
-  };
-  
-  printHierarchy(scene);
+  // const printHierarchy = (obj, indent = 0) => {
+  //   const prefix = '  '.repeat(indent);
+  //   console.log(`${prefix}${obj.type}: "${obj.name}" ${obj.isMesh ? '(MESH)' : ''}`);
+  //   obj.children.forEach(child => printHierarchy(child, indent + 1));
+  // };
+  // printHierarchy(scene);
 
   return <primitive object={scene} />;
 }
@@ -98,6 +98,12 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         </Suspense>
 
         {/* <GlowEffect /> */}
+
+        <ScreenVideo 
+          meshNames={['Cube008', 'Cube008_1']}
+          materialName="Screen"
+          videoSrc="/images/kpdh.mp4"
+        />
 
         <OrbitControls
           enablePan
