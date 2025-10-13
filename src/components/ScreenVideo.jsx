@@ -3,14 +3,14 @@
 // ======================= //
 
 import { useEffect, useRef, useState } from 'react';
+import * as THREE from 'three';
 import { useThree } from '@react-three/fiber';
 import { useProgress } from '@react-three/drei';
-import * as THREE from 'three';
 
 export function ScreenVideo({ 
   meshNames = ['Cube008', 'Cube008_1'], 
   materialName = 'Screen',
-  videoSrc = '/images/kpdh.mp4',
+  videoSrc = '/videos/kpdh.mp4',
   delaySeconds = 3
 }) {
   const { scene } = useThree();
