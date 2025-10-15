@@ -14,7 +14,7 @@ export default function Experience()
       location: "Jacksonville, FL",
       description: [
         "Automated 60% of smoke test cases with Playwright, reducing manual effort and speeding releases.",
-        "Built QueryGPT core features with Python, LangChain, and SQL, boosting Q&A accuracy and speed.",
+        "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
       note: "Extended my internship! Thank you P360 and Sales Team!",
@@ -29,7 +29,7 @@ export default function Experience()
       description: [
         "Managed a team of 13 to teach 400+ students professional and software development skills in workshops.",
         "Organized workshops with sponsor companies and clubs to create internship opportunities for students.",
-        "Collaborated in organizing the 2024 Hackathon where 600+ hackers and 9+ sponsors attended.",
+        "Collaborated in organizing the 2024 Hackathon where 600+ hackers, and 9+ sponsors attended.",
       ],
       note: "The start of it all. Taught me so much and got me so far.",
       logo: "/images/knight-hacks.jpg",
@@ -47,6 +47,7 @@ export default function Experience()
       ],
       note: "Amazing research and amazing people!",
       logo: "/images/ucf-eng.jpg",
+      link: "https://www.eecs.ucf.edu/isuelab/",
     },
     {
       company: "PERL Lab",
@@ -55,7 +56,7 @@ export default function Experience()
       location: "Orlando, FL",
       description: [
         "Researched AI integration for Physics-Informed Neural Networks to improve computational efficiency.",
-        "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques.",
+        "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques in PyTorch.",
         "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
       ],
       note: "I love rocket ships. Easily, my most difficult research as of right now.",

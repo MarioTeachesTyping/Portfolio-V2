@@ -40,7 +40,8 @@ export default function Projects()
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
       tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
              <FaNodeJs key="nodejs" title="Node.js" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaReact key="react" title="React" />
-      ]
+      ],
+      link: "https://github.com/MarioTeachesTyping/MarioGPT"
     },
     {
       name: "Fruit Slayer",

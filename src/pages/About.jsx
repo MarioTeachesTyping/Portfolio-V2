@@ -6,9 +6,9 @@ import React, { useEffect, useState } from "react";
 
 import { SiBruno } from "react-icons/si"
 import { FaUnity } from "react-icons/fa6";
+import { TbBrandThreejs } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaMusic } from "react-icons/fa";
+import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaMusic } from "react-icons/fa";
 import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiPytorch } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
@@ -147,7 +147,7 @@ export default function About()
         <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <FaLinux className="w-16 h-16 wiggle-hover" title="Linux" />
-          <TbBrandNextjs className="w-16 h-16 wiggle-hover" title="Next.js" />
+          <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
           <SiPytorch className="w-16 h-16 wiggle-hover" title="PyTorch" />
           <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
           <FaAws className="w-16 h-16 wiggle-hover" title="Amazon Web Services" />
