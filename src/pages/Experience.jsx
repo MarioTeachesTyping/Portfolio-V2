@@ -97,49 +97,63 @@ export default function Experience()
       <p className="text-xl text-center mb-11 mt-2">
         Thank you to everybody who has supported me along the way in achieving opportunities like this. Especially my family and friends.
       </p>
+
       <div className="space-y-6">
         {experiences.map((exp, i) => (
           <div
             key={i}
-            className="border-2 border-white bg-black text-white p-6 shadow-lg flex justify-between experience-card"
+            className="border-2 border-white bg-black text-white p-6 shadow-lg flex flex-col md:flex-row md:justify-between experience-card cursor-pointer"
             onClick={() => {
               if (exp.link) window.open(exp.link, "_blank", "noopener,noreferrer");
             }}
           >
             {/* Left Side */}
-
-            <div className="flex-1 pr-6">
+            <div className="md:flex-1 md:pr-6">
               <div className="mb-2">
                 <h3 className="text-3xl font-bold">{exp.company}</h3>
                 <p className="text-xl">{exp.role}</p>
               </div>
 
-              <div className="mt-4">
+              {/* Desktop bullets */}
+              <div className="hidden md:block mt-4">
                 <p className="font-semibold mb-2">I worked on:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-300 text-lg">
                   {exp.description.map((item, j) => (
                     <li key={j}>{item}</li>
                   ))}
                 </ul>
-              </div>
 
-              {exp.note && (
-                <p className="mt-4 text-gray-400 text-sm">{exp.note}</p>
-              )}
+                {exp.note && (
+                  <p className="mt-4 text-gray-400 text-sm">{exp.note}</p>
+                )}
+              </div>
             </div>
 
             {/* Right Side */}
-
-            <div className="flex flex-col items-center w-38">
+            <div className="md:w-42 flex flex-col items-center mt-4 md:mt-0">
               <img
                 src={exp.logo}
                 alt={`${exp.company} logo`}
-                className="w-40 h-38 object-cover border-3 border-white mb-2"
+                className="w-44 h-42 object-cover border-3 border-white mb-2"
               />
               <div className="text-sm text-center">
                 <p>{exp.date}</p>
                 <p>{exp.location}</p>
               </div>
+            </div>
+
+            {/* Mobile View */}
+            <div className="block md:hidden mt-4">
+              <p className="font-semibold mb-2">I worked on:</p>
+              <ul className="list-disc list-inside space-y-1 text-gray-300 text-lg">
+                {exp.description.map((item, j) => (
+                  <li key={j}>{item}</li>
+                ))}
+              </ul>
+
+              {exp.note && (
+                <p className="mt-4 text-gray-400 text-sm">{exp.note}</p>
+              )}
             </div>
           </div>
         ))}
