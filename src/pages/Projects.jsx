@@ -6,14 +6,24 @@ import React from 'react';
 
 import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { RiTeamLine, RiGeminiFill } from "react-icons/ri";
+import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, SiNginx, SiMinio, SiExpress } from 'react-icons/si';
+import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet } from 'react-icons/si';
 
 export default function Projects() 
 {
   const projects = [
+    {
+      name: "Coming soon...",
+      image: "/images/glitch.gif",
+      description: "Lemme make the LinkedIn post.",
+      tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
+             <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 7" },
+    },
     {
       name: "Formify",
       image: "/images/formify.jpg",
@@ -32,14 +42,14 @@ export default function Projects()
              <SiMinio key="minio" title="MinIO" />, <SiExpress key="express" title="Express.js" />, <FaDocker key="docker" title="Docker" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
-      link: "https://potara.art/"
+      link: "https://devpost.com/software/potara"
     },
     {
       name: "MarioGPT",
       image: "/images/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
       tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
-             <FaNodeJs key="nodejs" title="Node.js" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaReact key="react" title="React" />
+             <FaNodeJs key="nodejs" title="Node.js" />, <SiMongodb key="mongodb" title="MongoDB" />, <FaReact key="react" title="React" />
       ],
       link: "https://github.com/MarioTeachesTyping/MarioGPT"
     },
