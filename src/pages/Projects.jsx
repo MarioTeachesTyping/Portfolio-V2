@@ -6,9 +6,9 @@ import React from 'react';
 
 import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
+import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet } from 'react-icons/si';
 
@@ -38,7 +38,7 @@ export default function Projects()
       name: "Potara",
       image: "/images/potara.gif",
       description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
-      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="nginx" />,
+      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="NGINX" />,
              <SiMinio key="minio" title="MinIO" />, <SiExpress key="express" title="Express.js" />, <FaDocker key="docker" title="Docker" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
