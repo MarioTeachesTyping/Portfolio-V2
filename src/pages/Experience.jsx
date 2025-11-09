@@ -109,7 +109,7 @@ export default function Experience()
           >
             {/* Left Side */}
             <div className="md:flex-1 md:pr-6">
-              <div className="mb-2">
+              <div className="mb-2 text-center md:text-left">
                 <h3 className="text-3xl font-bold">{exp.company}</h3>
                 <p className="text-xl">{exp.role}</p>
               </div>
@@ -152,7 +152,7 @@ export default function Experience()
               </ul>
 
               {exp.note && (
-                <p className="mt-4 text-gray-400 text-sm">{exp.note}</p>
+                <p className="mt-4 text-gray-400 text-sm text-center">{exp.note}</p>
               )}
             </div>
           </div>

@@ -69,7 +69,7 @@ export default function NavBar()
           </div>
         </div>
 
-        <div className="hidden md:flex space-x-9 text-lg items-center">
+        <div className="hidden md:flex space-x-8 text-lg items-center">
           <button className="hover:bg-white/10" onClick={() => setShowAbout(true)}>
             About
           </button>
