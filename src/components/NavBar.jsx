@@ -119,10 +119,10 @@ export default function NavBar()
       </div>
 
       <div
-        className={`md:hidden fixed top-[72px] right-0 left-0 z-50 origin-top
+        className={`md:hidden fixed top-[72px] right-0 left-0 z-40
                     bg-black border-3 border-white shadow-lg
-                    transition-transform transition-opacity duration-200
-                    ${menuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
+                    transition-all duration-300 ease-out overflow-hidden
+                    ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 border-0'}`}
       >
         <div className="p-3 divide-y divide-white/10">
           <div className="flex flex-col py-2">
@@ -137,7 +137,7 @@ export default function NavBar()
             </button>
           </div>
 
-          <div className="flex items-center justify-center gap-6 py-4 px-3">
+          <div className="flex items-center justify-center gap-5 py-3 px-3">
             <a
               href="/images/Resume.pdf"
               target="_blank"
