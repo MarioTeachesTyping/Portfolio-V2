@@ -2,8 +2,9 @@
 // Nav Bar //
 // ======= //
 
-import { useState, useMemo } from "react";
-import { FaGithub, FaLinkedin, FaRegFileAlt, FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import { useState, useMemo, useRef } from "react";
+import { FaGithub, FaLinkedin, FaRegFileAlt } from "react-icons/fa";
+import { MdLibraryMusic } from "react-icons/md";
 
 import Modal from "./Modal";
 import About from "../pages/About";
@@ -16,9 +17,10 @@ export default function NavBar()
   const [showAbout, setShowAbout] = useState(false);
   const [showExperience, setShowExperience] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
+  const [showMusicPlayer, setShowMusicPlayer] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const [muted, setMuted] = useState(true);
+  const musicPlayerRef = useRef(null);
 
   // Memoize the tracks array so it stays stable across re-renders.
   const TRACKS = useMemo(() => [
@@ -32,18 +34,48 @@ export default function NavBar()
     "how to sleep.mp3",
   ], []);
 
+  const TRACK_IMAGES = useMemo(() => ({
+    "Space Junk Road.mp3": "/images/albums/mario_galaxy_ost.jpg",
+    "Space Trip Steps.mp3": "/images/albums/sa2_ost.jpg",
+    "Beneath the Mask -rain-.mp3": "/images/albums/p5_ost.jpg",
+    "Darkness Time.mp3": "/images/albums/dgrv3_ost_white.jpg",
+    "Fresh (Chill Mix).mp3": "/images/albums/fnf_vol2_ost.jpg",
+    "Pause Menu (Pico).mp3": "/images/albums/fnf_vol3_ost.jpg",
+    "Nintendo (Remix).mp3": "/images/albums/nintendo_remix.jpg",
+    "how to sleep.mp3": "/images/albums/deathbrain.jpg",
+  }), []);
+
+  const TRACK_ARTISTS = useMemo(() => ({
+    "Space Junk Road.mp3": "Mahito Yokota",
+    "Space Trip Steps.mp3": "SEGA SOUND TEAM, Tomoya Ohtani",
+    "Beneath the Mask -rain-.mp3": "Lyn",
+    "Darkness Time.mp3": "Masafumi Takada",
+    "Fresh (Chill Mix).mp3": "Funkin' Sound Team, Kawai Sprite",
+    "Pause Menu (Pico).mp3": "Funkin' Sound Team, Kawai Sprite",
+    "Nintendo (Remix).mp3": "jalenrekt, QKReign, perfect!",
+    "how to sleep.mp3": "Deathbrain",
+  }), []);
+
   const openAbout = () => { setShowAbout(true); setMenuOpen(false); };
   const openExperience = () => { setShowExperience(true); setMenuOpen(false); };
   const openProjects = () => { setShowProjects(true); setMenuOpen(false); };
+  const openMusicPlayer = () => { 
+    setShowMusicPlayer(true); 
+    setMenuOpen(false);
+  };
 
   return (
     <>
       {/* Always-mounted, headless audio player. */}
       <MusicPlayer
-        isMuted={muted}
+        ref={musicPlayerRef}
         tracks={TRACKS}
+        trackImages={TRACK_IMAGES}
+        trackArtists={TRACK_ARTISTS}
         basePath="/music/"
         volume={1.0}
+        isModalOpen={showMusicPlayer}
+        onCloseModal={() => setShowMusicPlayer(false)}
       />
 
       <div className="w-full border-3 border-white fixed top-0 left-0 bg-black text-white flex justify-between items-center px-6 py-5 z-50">
@@ -62,9 +94,9 @@ export default function NavBar()
             <button
               type="button"
               className="hidden md:inline-flex items-center justify-center w-12 h-9 hover:opacity-80 active:opacity-80 transition"
-              onClick={() => setMuted((m) => !m)}
+              onClick={openMusicPlayer}
             >
-              {muted ? <FaVolumeMute className="w-8 h-8" /> : <FaVolumeUp className="w-9 h-9" />}
+              <MdLibraryMusic className="w-10 h-10" />
             </button>
           </div>
         </div>
@@ -165,9 +197,9 @@ export default function NavBar()
             <button
               type="button"
               className="inline-flex items-center justify-center w-10 h-10 hover:opacity-80 active:opacity-80 transition"
-              onClick={() => setMuted((m) => !m)}
+              onClick={openMusicPlayer}
             >
-              {muted ? <FaVolumeMute className="w-10 h-10" /> : <FaVolumeUp className="w-10 h-10" />}
+              <MdLibraryMusic className="w-10 h-10" />
             </button>
           </div>
         </div>
