@@ -337,7 +337,7 @@ const MusicPlayer = forwardRef((
           <div className="flex items-center gap-8 mb-8 mt-4">
             <button
               onClick={handlePrevTrack}
-              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all hover:scale-105 active:scale-95"
+              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all active:scale-95"
             >
               <MdSkipPrevious className="w-10 h-10" />
             </button>
@@ -351,7 +351,7 @@ const MusicPlayer = forwardRef((
 
             <button
               onClick={handleNextTrack}
-              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all hover:scale-105 active:scale-95"
+              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all active:scale-95"
             >
               <MdSkipNext className="w-10 h-10" />
             </button>
