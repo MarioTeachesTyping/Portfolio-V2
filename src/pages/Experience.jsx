@@ -31,7 +31,7 @@ export default function Experience()
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
       note: "Extended my internship! Thank you P360 and Sales Team!",
-      logo: "/images/florida-blue.jpg",
+      logo: "/images/experiences/florida-blue.jpg",
       link: "https://www.floridablue.com/",
     },
     {
@@ -45,7 +45,7 @@ export default function Experience()
         "Collaborated in organizing the 2025 Hackathon where 1500+ registrants, 1000+ hackers, and 15+ sponsors attended.",
       ],
       note: "The start of it all. Taught me so much and got me so far.",
-      logo: "/images/knight-hacks.jpg",
+      logo: "/images/experiences/knight-hacks.jpg",
       link: "https://club.knighthacks.org/",
     },
     {
@@ -59,7 +59,7 @@ export default function Experience()
         "Collaborated with researchers on papers, optimizing workflow, and enhancing VR systems for user studies.",
       ],
       note: "Amazing research and amazing people!",
-      logo: "/images/ucf-eng.jpg",
+      logo: "/images/experiences/ucf-eng.jpg",
       link: "https://www.eecs.ucf.edu/isuelab/",
     },
     {
@@ -73,7 +73,7 @@ export default function Experience()
         "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
       ],
       note: "I love rocket ships. Easily, my most difficult research as of right now.",
-      logo: "/images/ucf-mec.jpg",
+      logo: "/images/experiences/ucf-mec.jpg",
       link: "https://mae.ucf.edu/PERL/",
     },
     {
@@ -86,7 +86,7 @@ export default function Experience()
         "Assisted with store resets, various marketing campaigns, and worked with a team to meet daily goals.",
       ],
       note: "Yeah.",
-      logo: "/images/walgreens.jpg",
+      logo: "/images/experiences/walgreens.jpg",
       link: "https://www.walgreens.com/",
     },
   ];

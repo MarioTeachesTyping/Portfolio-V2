@@ -26,7 +26,7 @@ export default function Projects()
     },
     {
       name: "Formify",
-      image: "/images/formify.jpg",
+      image: "/images/projects/formify.jpg",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
@@ -36,7 +36,7 @@ export default function Projects()
     },
     {
       name: "Potara",
-      image: "/images/potara.gif",
+      image: "/images/projects/potara.gif",
       description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
       tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="NGINX" />,
              <SiMinio key="minio" title="MinIO" />, <SiExpress key="express" title="Express.js" />, <FaDocker key="docker" title="Docker" />
@@ -46,7 +46,7 @@ export default function Projects()
     },
     {
       name: "MarioGPT",
-      image: "/images/mario.png",
+      image: "/images/projects/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
       tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
              <FaNodeJs key="nodejs" title="Node.js" />, <SiMongodb key="mongodb" title="MongoDB" />, <FaReact key="react" title="React" />
@@ -55,7 +55,7 @@ export default function Projects()
     },
     {
       name: "Fruit Slayer",
-      image: "/images/fruit-slayer.gif",
+      image: "/images/projects/fruit-slayer.gif",
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
       tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiTensorflow key="tensorflow" title="TensorFlow" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
@@ -64,7 +64,7 @@ export default function Projects()
     },
     {
       name: "MyGameList",
-      image: "/images/mygamelist.jpg",
+      image: "/images/projects/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
       tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
@@ -72,7 +72,7 @@ export default function Projects()
     },
     {
       name: "Portfolio-V2",
-      image: "/images/portfolio.gif",
+      image: "/images/projects/portfolio.gif",
       description: "You're looking at it.",
       tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiJavascript key="javascript" title="JavaScript" />, <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
@@ -81,7 +81,7 @@ export default function Projects()
     },
     {
       name: "Paracosm",
-      image: "/images/paracosm.jpg",
+      image: "/images/projects/paracosm.jpg",
       description: "Web-accessible program that allows users to manipulate objects in Unity created 3D environment.",
       tech: [<FaUnity key="unity" title="Unity" />, <FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, 
              <SiMediapipe key="mediapipe" title="MediaPipe" />, <SiFlask key="flask" title="Flask" />, <SiWebgl key="webgl" title="WebGL" />
