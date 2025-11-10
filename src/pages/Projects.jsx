@@ -16,13 +16,14 @@ export default function Projects()
 {
   const projects = [
     {
-      name: "Coming soon...",
-      image: "/images/glitch.gif",
-      description: "Lemme make the LinkedIn post.",
+      name: "CareerWise",
+      image: "/images/projects/careerwise.gif",
+      description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
       tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
              <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 7" },
+      link: "https://github.com/cfgcolumbus25/Team-20"
     },
     {
       name: "Formify",
