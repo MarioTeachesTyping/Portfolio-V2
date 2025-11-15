@@ -10,7 +10,20 @@ export default function Experience()
     {
       company: "Incoming...",
       role: "Software Engineer Intern",
-      date: "??? - ???",
+      date: "Summer 2026...",
+      location: "???",
+      description: [
+        "Soon...",
+        "Soon...",
+        "Soon...",
+      ],
+      note: "Manifesting...",
+      logo: "/images/glitch.gif",
+    },
+    {
+      company: "Incoming...",
+      role: "Software Engineer Intern",
+      date: "Spring 2026...",
       location: "???",
       description: [
         "Soon...",
