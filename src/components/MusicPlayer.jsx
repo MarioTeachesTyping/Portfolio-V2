@@ -291,7 +291,7 @@ const MusicPlayer = forwardRef((
           <h2 className="text-4xl font-bold mb-8">Jukebox</h2>
           
           {/* Album Art */}
-          <div className="w-80 h-80 bg-black border-4 border-white mb-8 flex items-center justify-center shadow-2xl overflow-hidden">
+          <div className="w-80 h-80 bg-black border-4 border-white mb-8 flex items-center justify-center shadow-2xl overflow-hidden experience-card">
             {getCurrentTrackImage() ? (
               <img 
                 src={getCurrentTrackImage()} 
