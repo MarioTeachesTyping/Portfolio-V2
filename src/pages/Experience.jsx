@@ -26,10 +26,11 @@ export default function Experience()
       date: "Jan. 2026 - Jun. 2026",
       location: "Lake Buena Vista, FL",
       description: [
-        "Incoming Software Engineer Intern for the GET SS-W-Attractions Systems Team at Disney Experiences!",
+        "Incoming Software Engineer Intern for the GET SS-W-Attractions Systems Team at Disney Experiences.",
       ],
       note: "I don't know how I got this opportunity...",
       logo: "/images/experiences/disney.jpg",
+      link: "https://thewaltdisneycompany.com/",
     },
     {
       company: "Florida Blue",
