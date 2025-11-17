@@ -21,17 +21,15 @@ export default function Experience()
       logo: "/images/glitch.gif",
     },
     {
-      company: "Incoming...",
+      company: "The Walt Disney Company",
       role: "Software Engineer Intern",
-      date: "Spring 2026...",
-      location: "???",
+      date: "Jan. 2026 - Jun. 2026",
+      location: "Lake Buena Vista, FL",
       description: [
-        "Soon...",
-        "Soon...",
-        "Soon...",
+        "Incoming Software Engineer Intern for the GET SS-W-Attractions Systems Team at Disney Experiences!",
       ],
-      note: "Manifesting...",
-      logo: "/images/glitch.gif",
+      note: "I don't know how I got this opportunity...",
+      logo: "/images/experiences/disney.jpg",
     },
     {
       company: "Florida Blue",
