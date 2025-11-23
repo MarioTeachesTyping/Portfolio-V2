@@ -10,7 +10,7 @@ import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet } from 'react-icons/si';
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia } from 'react-icons/si';
 
 export default function Projects() 
 {
@@ -46,6 +46,16 @@ export default function Projects()
       link: "https://devpost.com/software/potara"
     },
     {
+      name: "Hot Dog",
+      image: "/images/projects/hot-dog.gif",
+      description: "Hot Dog can do anything.",
+      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />,
+             <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 4" },
+      link: "https://github.com/ENG4060-C/final-project"
+    },
+    {
       name: "MarioGPT",
       image: "/images/projects/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
@@ -59,7 +69,7 @@ export default function Projects()
       image: "/images/projects/fruit-slayer.gif",
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
       tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
-             <SiTensorflow key="tensorflow" title="TensorFlow" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
+             <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
       ],
       link: "https://devpost.com/software/fruit-slayer"
     },

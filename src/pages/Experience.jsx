@@ -86,7 +86,7 @@ export default function Experience()
         "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques in PyTorch.",
         "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
       ],
-      note: "I love rocket ships. Easily, my most difficult research as of right now.",
+      note: "I love rocket ships.",
       logo: "/images/experiences/ucf-mec.jpg",
       link: "https://mae.ucf.edu/PERL/",
     },
