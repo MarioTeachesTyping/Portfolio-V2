@@ -8,7 +8,7 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle } from 'react-icons/fa';
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia } from 'react-icons/si';
 
@@ -18,6 +18,8 @@ export default function Projects()
     {
       name: "CareerWise",
       image: "/images/projects/careerwise.gif",
+      badge: "JPMC Code for Good 2025 Winner",
+      badgeColor: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
       tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
              <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
@@ -28,6 +30,8 @@ export default function Projects()
     {
       name: "Formify",
       image: "/images/projects/formify.jpg",
+      badge: "Knight Hacks VII Best Overall",
+      badgeColor: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
@@ -48,7 +52,7 @@ export default function Projects()
     {
       name: "Hot Dog",
       image: "/images/projects/hot-dog.gif",
-      description: "Hot Dog can do anything. Using his agentic reasoning system and YOLOE labeling, he can do open-ended tasks.",
+      description: "Hot Dog can do anything.",
       tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />, <SiOllama key="llama" title="Llama" />,
              <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
       ],
@@ -113,11 +117,11 @@ export default function Projects()
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-82 h-[450px] border-5 border-white-400 bg-black text-white p-4 flex flex-col justify-between project-card hover:scale-105 transition-transform"
+            className="w-82 h-[500px] border-5 border-white-400 bg-black text-white p-4 flex flex-col project-card hover:scale-105 transition-transform"
           >
-            <h3 className="text-2xl font-bold text-center mb-4">{project.name}</h3>
+            <h3 className="text-2xl font-bold text-center mb-5">{project.name}</h3>
             
-            <div className="w-full h-65 bg-gray-700 mb-1 relative overflow-hidden">
+            <div className="w-full h-60 bg-gray-700 mb-5 relative overflow-hidden border border-white">
               <img 
                 src={project.image} 
                 alt={project.name} 
@@ -127,7 +131,16 @@ export default function Projects()
               />
             </div>
             
-            <p className="text-gray-300 text-md mb-4 mt-4 text-center">{project.description}</p>
+            {project.badge && (
+              <div className="flex justify-center mb-5">
+                <span className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold border-2 ${project.badgeColor || 'border-blue-500 text-blue-500'}`}>
+                  <FaMedal />
+                  {project.badge}
+                </span>
+              </div>
+            )}
+            
+            <p className="text-gray-300 text-md mb-5 text-center">{project.description}</p>
             
             {project.team && (
               <div className="flex items-center justify-center gap-2 text-lg mb-6">
