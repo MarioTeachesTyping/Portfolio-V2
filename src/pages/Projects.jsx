@@ -7,8 +7,8 @@ import React from 'react';
 import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { FaPython, FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia } from 'react-icons/si';
 
@@ -29,7 +29,7 @@ export default function Projects()
       name: "Formify",
       image: "/images/projects/formify.jpg",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
-      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+      tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
@@ -48,9 +48,9 @@ export default function Projects()
     {
       name: "Hot Dog",
       image: "/images/projects/hot-dog.gif",
-      description: "Hot Dog can do anything.",
-      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />,
-             <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
+      description: "Hot Dog can do anything. Using his agentic reasoning system and YOLOE labeling, he can do open-ended tasks.",
+      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />, <SiOllama key="llama" title="Llama" />,
+             <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
@@ -68,7 +68,7 @@ export default function Projects()
       name: "Fruit Slayer",
       image: "/images/projects/fruit-slayer.gif",
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
-      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+      tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
       ],
       link: "https://devpost.com/software/fruit-slayer"
@@ -94,7 +94,7 @@ export default function Projects()
       name: "Paracosm",
       image: "/images/projects/paracosm.jpg",
       description: "Web-accessible program that allows users to manipulate objects in Unity created 3D environment.",
-      tech: [<FaUnity key="unity" title="Unity" />, <FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, 
+      tech: [<FaUnity key="unity" title="Unity" />, <SiOpencv key="opencv" title="OpenCV" />, 
              <SiMediapipe key="mediapipe" title="MediaPipe" />, <SiFlask key="flask" title="Flask" />, <SiWebgl key="webgl" title="WebGL" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 3" },

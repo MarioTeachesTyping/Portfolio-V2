@@ -287,11 +287,12 @@ const MusicPlayer = forwardRef((
 
       {/* Music Player Modal */}
       <Modal isOpen={isModalOpen} onClose={onCloseModal}>
-        <div className="flex flex-col items-center justify-center p-8">
-          <h2 className="text-4xl font-bold mb-8">Jukebox</h2>
+        <div className="flex flex-col items-center justify-center pt-4 px-8 pb-8">
+          <h2 className="text-5xl text-center mb-7 font-bold">Jukebox</h2>
+          <p className ="text-xl text-center mb-9">Enjoy some of my favorite tracks from different artists.</p>
           
           {/* Album Art */}
-          <div className="w-80 h-80 bg-black border-4 border-white mb-8 flex items-center justify-center shadow-2xl overflow-hidden experience-card">
+          <div className="w-74 h-74 bg-black border-4 border-white mb-8 flex items-center justify-center shadow-2xl overflow-hidden experience-card">
             {getCurrentTrackImage() ? (
               <img 
                 src={getCurrentTrackImage()} 
