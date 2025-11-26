@@ -9,7 +9,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal } from 'react-icons/fa';
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, SiTensorflow, 
+import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia } from 'react-icons/si';
 
 export default function Projects() 
@@ -18,7 +18,7 @@ export default function Projects()
     {
       name: "CareerWise",
       image: "/images/projects/careerwise.gif",
-      badge: "JPMC Code for Good 2025 Winner",
+      badge: "JPMC Code for Good Winner",
       badgeColor: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
       tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
@@ -30,7 +30,7 @@ export default function Projects()
     {
       name: "Formify",
       image: "/images/projects/formify.jpg",
-      badge: "Knight Hacks VII Best Overall",
+      badge: "Knight Hacks VII Winner",
       badgeColor: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
@@ -53,7 +53,7 @@ export default function Projects()
       name: "Hot Dog",
       image: "/images/projects/hot-dog.gif",
       description: "Hot Dog can do anything.",
-      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />, <SiOllama key="llama" title="Llama" />,
+      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />,
              <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
@@ -143,7 +143,7 @@ export default function Projects()
             <p className="text-gray-300 text-md mb-5 text-center">{project.description}</p>
             
             {project.team && (
-              <div className="flex items-center justify-center gap-2 text-lg mb-6">
+              <div className="flex items-center justify-center gap-2 text-md mb-6">
                 <span className="text-2xl">{project.team.icon}</span>
                 <span>{project.team.text}</span>
               </div>

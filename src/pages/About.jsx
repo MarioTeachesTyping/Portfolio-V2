@@ -6,10 +6,10 @@ import React, { useEffect, useState } from "react";
 
 import { SiBruno } from "react-icons/si"
 import { FaUnity } from "react-icons/fa6";
-import { TbBrandThreejs } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaMusic } from "react-icons/fa";
-import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiPytorch } from "react-icons/si";
+import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
 import { searchSpotifyTrack } from "../scripts/spotify";
@@ -148,7 +148,8 @@ export default function About()
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <FaLinux className="w-16 h-16 wiggle-hover" title="Linux" />
           <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
-          <SiPytorch className="w-16 h-16 wiggle-hover" title="PyTorch" />
+          <TbBrandNextjs className="w-16 h-16 wiggle-hover" title="Next.js" />
+          <SiMongodb className="w-16 h-16 wiggle-hover" title="MongoDB" />
           <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
           <FaAws className="w-16 h-16 wiggle-hover" title="Amazon Web Services" />
           <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
