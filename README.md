@@ -2,7 +2,7 @@
 
 It's cooler.
 
-![Web Screenshot](./public/images/projects/portfolio.gif "Website Screenshot")
+![Web Screenshot](./public/images/website.jpg "Website Screenshot")
 
 ## Instructions
 
@@ -28,6 +28,8 @@ v2.21 - LED Lighting
 v2.30 - Screen Videos
 
 v2.40 - Jukebox (Music Player Overhaul)
+
+v2.41 - Project Badges
 
 ## Inspiration
 
