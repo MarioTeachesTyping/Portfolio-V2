@@ -25,6 +25,24 @@
   font-display: swap;
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* keep the bar width */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important; /* remove background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;  /* the bar itself */
+  border-radius: 4px;
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
 /* ----------- Animations ----------- */
 
 @keyframes wiggle {

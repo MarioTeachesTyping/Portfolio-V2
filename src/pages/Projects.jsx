@@ -8,9 +8,9 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal } from 'react-icons/fa';
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia } from 'react-icons/si';
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio } from 'react-icons/si';
 
 export default function Projects() 
 {
@@ -19,7 +19,7 @@ export default function Projects()
       name: "CareerWise",
       image: "/images/projects/careerwise.gif",
       badge: "JPMC Code for Good Winner",
-      badgeColor: "border-blue-200 text-blue-200",
+      badge_color: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
       tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
              <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
@@ -31,7 +31,7 @@ export default function Projects()
       name: "Formify",
       image: "/images/projects/formify.jpg",
       badge: "Knight Hacks VII Winner",
-      badgeColor: "border-yellow-200 text-yellow-200",
+      badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
@@ -50,9 +50,18 @@ export default function Projects()
       link: "https://devpost.com/software/potara"
     },
     {
+      name: "Tamagario",
+      image: "/images/projects/tamagario.jpg",
+      description: "Take care of a pet Mario inspired by Tamagotchi. Play, feed, clean, or rest with Mario and evolve him to his invincible super star form!",
+      tech: [<SiAndroidstudio key="androidstudio" title="Android Studio" />,
+             <FaJava key="java" title="Java" />,
+      ],
+      link: "https://github.com/MarioTeachesTyping/Tamagario"
+    },
+    {
       name: "Hot Dog",
       image: "/images/projects/hot-dog.gif",
-      description: "Hot Dog can do anything.",
+      description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
       tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />,
              <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
       ],
@@ -133,7 +142,7 @@ export default function Projects()
             
             {project.badge && (
               <div className="flex justify-center mb-5">
-                <span className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold border-2 ${project.badgeColor || 'border-blue-500 text-blue-500'}`}>
+                <span className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold border-2 ${project.badge_color || 'border-blue-500 text-blue-500'}`}>
                   <FaMedal />
                   {project.badge}
                 </span>
