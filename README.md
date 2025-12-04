@@ -13,23 +13,18 @@ pnpm run dev
 
 ## Timeline
 
-v2.00 - New Portfolio Created
-
-v2.01 - Super Mario Font
-
-v2.02 - Loading...
-
-v2.10 - Music Player
-
-v2.20 - Top Tracks
-
-v2.21 - LED Lighting
-
-v2.30 - Screen Videos
-
-v2.40 - Jukebox (Music Player Overhaul)
-
-v2.41 - Project Badges
+```
+Portfolio
+├── v2.00       - New Portfolio Created
+│   ├── v2.01   - Super Mario Font
+│   └── v2.02   - Loading...
+├── v2.10       - Music Player
+├── v2.20       - Top Tracks
+│   └── v2.21   - LED Lighting
+├── v2.30       - Screen Videos
+└── v2.40       - Jukebox (Music Player Overhaul)
+    └── v2.41   - Project Badges
+```
 
 ## Inspiration
 
