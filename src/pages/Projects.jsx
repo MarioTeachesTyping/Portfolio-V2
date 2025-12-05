@@ -8,7 +8,7 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava } from 'react-icons/fa';
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio } from 'react-icons/si';
 
@@ -90,8 +90,8 @@ export default function Projects()
       name: "MyGameList",
       image: "/images/projects/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
-             <SiTypescript key="typescript" title="TypeScript" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <SiPrisma key="prisma" title="Prisma" />
+      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />, 
+             <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaAws key="aws" title="AWS" />, <SiPrisma key="prisma" title="Prisma" />
       ]
     },
     {

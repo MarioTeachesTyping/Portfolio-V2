@@ -150,7 +150,7 @@ export default function Experience()
                 alt={`${exp.company} logo`}
                 className="w-44 h-42 object-cover border-3 border-white mb-2"
               />
-              <div className="text-sm text-center">
+              <div className="text-md text-center">
                 <p>{exp.date}</p>
                 <p>{exp.location}</p>
               </div>
