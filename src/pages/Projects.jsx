@@ -25,7 +25,7 @@ export default function Projects()
              <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 7" },
-      link: "https://github.com/cfgcolumbus25/Team-20"
+      link: "https://github.com/MarioTeachesTyping/CareerWise"
     },
     {
       name: "Formify",
@@ -51,7 +51,7 @@ export default function Projects()
     },
     {
       name: "Tamagario",
-      image: "/images/projects/tamagario.jpg",
+      image: "/images/projects/tamagario.gif",
       description: "Take care of a pet Mario inspired by Tamagotchi. Play, feed, clean, or rest with Mario and evolve him to his invincible super star form!",
       tech: [<SiAndroidstudio key="androidstudio" title="Android Studio" />,
              <FaJava key="java" title="Java" />,

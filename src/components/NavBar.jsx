@@ -95,7 +95,7 @@ export default function NavBar()
           />
 
           <div className="flex items-center gap-3">
-            <div className="text-xl font-bold">Anthony Terry</div>
+            <div className="text-2xl font-bold">Anthony Terry</div>
 
             <button
               type="button"

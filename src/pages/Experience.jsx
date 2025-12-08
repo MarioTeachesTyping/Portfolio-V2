@@ -40,8 +40,9 @@ export default function Experience()
       date: "May 2025 - Present",
       location: "Jacksonville, FL",
       description: [
-        "Automated 60% of smoke test cases with Playwright, reducing manual effort and speeding releases.",
-        "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed.",
+        "Built 20% of behavior-driven development functional test cases for the Sales website using Cucumber and Playwright, accelerating release cycles.",
+        "Automated 60% of smoke test cases for the Preferences & Consents website using Playwright, cutting manual testing time for 14+ million users.",
+        "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed by 23%.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
       note: "Extended my internship! Thank you P360 and Sales Team!",
@@ -55,7 +56,8 @@ export default function Experience()
       location: "Orlando, FL",
       description: [
         "Managed a team of 13 to teach 500+ students professional and software development skills in workshops.",
-        "Organized workshops with sponsor companies and clubs to create internship opportunities for students.",
+        "Organized 40+ workshops with sponsor companies and clubs to create internship opportunities for students.",
+        "Introduced new workshop formats that increased participant engagement by 30% compared to previous semesters.",
         "Collaborated in organizing the 2025 Hackathon where 1500+ registrants, 1000+ hackers, and 15+ sponsors attended.",
       ],
       note: "The start of it all. Taught me so much and got me so far.",
@@ -65,7 +67,7 @@ export default function Experience()
     {
       company: "ISUE Lab",
       role: "Undergraduate Researcher",
-      date: "Aug 2024 - Present",
+      date: "Aug 2024 - May 2025",
       location: "Orlando, FL",
       description: [
         "Conducted Human-Computer Interaction-related user studies to assist in research.",
@@ -131,9 +133,9 @@ export default function Experience()
               {/* Desktop bullets */}
               <div className="hidden md:block mt-4">
                 <p className="font-semibold mb-2">I worked on:</p>
-                <ul className="list-disc list-inside space-y-1 text-gray-300 text-lg">
+                <ul className="list-disc space-y-1 text-gray-300 text-lg ml-5">
                   {exp.description.map((item, j) => (
-                    <li key={j}>{item}</li>
+                    <li key={j} className="pl-2">{item}</li>
                   ))}
                 </ul>
 
@@ -159,9 +161,9 @@ export default function Experience()
             {/* Mobile View */}
             <div className="block md:hidden mt-4">
               <p className="font-semibold mb-2">I worked on:</p>
-              <ul className="list-disc list-inside space-y-1 text-gray-300 text-lg">
+              <ul className="list-disc space-y-1 text-gray-300 text-lg ml-5">
                 {exp.description.map((item, j) => (
-                  <li key={j}>{item}</li>
+                  <li key={j} className="pl-2">{item}</li>
                 ))}
               </ul>
 
