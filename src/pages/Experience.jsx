@@ -8,19 +8,6 @@ export default function Experience()
 {
   const experiences = [
     {
-      company: "Incoming...",
-      role: "Software Engineer Intern",
-      date: "Summer 2026...",
-      location: "???",
-      description: [
-        "Soon...",
-        "Soon...",
-        "Soon...",
-      ],
-      note: "Manifesting...",
-      logo: "/images/glitch.gif",
-    },
-    {
       company: "The Walt Disney Company",
       role: "Software Engineer Intern",
       date: "Jan 2026 - Jun 2026",

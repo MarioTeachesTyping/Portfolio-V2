@@ -17,7 +17,8 @@ export default function Projects()
   const projects = [
     {
       name: "CareerWise",
-      image: "/images/projects/careerwise.gif",
+      image: "/videos/projects/careerwise.mp4",
+      is_video: true,
       badge: "JPMC Code for Good Winner",
       badge_color: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
@@ -41,7 +42,8 @@ export default function Projects()
     },
     {
       name: "Potara",
-      image: "/images/projects/potara.gif",
+      image: "/videos/projects/potara.mp4",
+      is_video: true,
       description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
       tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="NGINX" />,
              <SiMinio key="minio" title="MinIO" />, <SiExpress key="express" title="Express.js" />, <FaDocker key="docker" title="Docker" />
@@ -51,7 +53,8 @@ export default function Projects()
     },
     {
       name: "Tamagario",
-      image: "/images/projects/tamagario.gif",
+      image: "/videos/projects/tamagario.mp4",
+      is_video: true,
       description: "Take care of a pet Mario inspired by Tamagotchi. Play, feed, clean, or rest with Mario and evolve him to his invincible super star form!",
       tech: [<SiAndroidstudio key="androidstudio" title="Android Studio" />,
              <FaJava key="java" title="Java" />,
@@ -60,7 +63,8 @@ export default function Projects()
     },
     {
       name: "Hot Dog",
-      image: "/images/projects/hot-dog.gif",
+      image: "/videos/projects/hot-dog.mp4",
+      is_video: true,
       description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
       tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />,
              <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
@@ -79,7 +83,8 @@ export default function Projects()
     },
     {
       name: "Fruit Slayer",
-      image: "/images/projects/fruit-slayer.gif",
+      image: "/videos/projects/fruit-slayer.mp4",
+      is_video: true,
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
       tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
@@ -96,7 +101,8 @@ export default function Projects()
     },
     {
       name: "Portfolio-V2",
-      image: "/images/projects/portfolio.gif",
+      image: "/videos/projects/portfolio.mp4",
+      is_video: true,
       description: "You're looking at it.",
       tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiJavascript key="javascript" title="JavaScript" />, <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
@@ -131,13 +137,24 @@ export default function Projects()
             <h3 className="text-2xl font-bold text-center mb-5">{project.name}</h3>
             
             <div className="w-full h-60 bg-gray-700 mb-5 relative overflow-hidden border border-white">
-              <img 
-                src={project.image} 
-                alt={project.name} 
-                className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+              {project.is_video ? (
+                <video
+                  src={project.image}
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              ) : (
+                <img 
+                  src={project.image} 
+                  alt={project.name} 
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
             </div>
             
             {project.badge && (
