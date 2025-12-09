@@ -95,15 +95,7 @@ export default function NavBar()
           />
 
           <div className="flex items-center gap-3">
-            <div className="text-2xl font-bold">Anthony Terry</div>
-
-            <button
-              type="button"
-              className="hidden md:inline-flex items-center justify-center w-12 h-9 hover:opacity-80 active:opacity-80 transition"
-              onClick={openMusicPlayer}
-            >
-              <MdLibraryMusic className="w-10 h-10" />
-            </button>
+            <div className="text-2xl" style={{ fontFamily: 'MarioFont' }}>Anthony Terry</div>
           </div>
         </div>
 
@@ -116,6 +108,9 @@ export default function NavBar()
           </button>
           <button className="hover:bg-white/10" onClick={() => setShowProjects(true)}>
             Projects
+          </button>
+          <button className="hover:bg-white/10" onClick={openMusicPlayer}>
+            Music
           </button>
 
           <a

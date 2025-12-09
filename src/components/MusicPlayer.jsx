@@ -3,7 +3,9 @@
 // ============ //
 
 import React, { useEffect, useMemo, useRef, useState, forwardRef, useImperativeHandle } from "react";
-import { MdLibraryMusic, MdSkipNext, MdSkipPrevious, MdVolumeUp, MdPlayArrow, MdPause } from "react-icons/md";
+import { IoIosSkipBackward, IoIosSkipForward } from "react-icons/io";
+import { MdLibraryMusic, MdVolumeUp, MdPlayArrow, MdPause } from "react-icons/md";
+
 import Modal from "./Modal";
 
 const MusicPlayer = forwardRef((
@@ -334,7 +336,7 @@ const MusicPlayer = forwardRef((
                 background: `linear-gradient(to right, #fff ${(currentTime / duration) * 100}%, #374151 ${(currentTime / duration) * 100}%)`
               }}
             />
-            <div className="flex justify-between text-sm text-gray-500 mt-1">
+            <div className="flex justify-between text-sm text-white mt-1">
               <span>{formatTime(currentTime)}</span>
               <span>{formatTime(duration)}</span>
             </div>
@@ -344,29 +346,29 @@ const MusicPlayer = forwardRef((
           <div className="flex items-center gap-8 mb-8 mt-4">
             <button
               onClick={handlePrevTrack}
-              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all active:scale-95"
+              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-80"
             >
-              <MdSkipPrevious className="w-10 h-10" />
+              <IoIosSkipBackward className="w-10 h-10" />
             </button>
 
             <button
               onClick={togglePlayPause}
-              className="w-20 h-20 rounded-full bg-white hover:bg-gray-200 flex items-center justify-center transition-all hover:scale-105 active:scale-95 text-black"
+              className="w-20 h-20 rounded-full bg-white hover:opacity-80 flex items-center justify-center transition-all active:scale-95 text-black"
             >
               {localMuted ? <MdPlayArrow className="w-10 h-10" /> : <MdPause className="w-10 h-10" />}
             </button>
 
             <button
               onClick={handleNextTrack}
-              className="w-16 h-16 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all active:scale-95"
+              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-80"
             >
-              <MdSkipNext className="w-10 h-10" />
+              <IoIosSkipForward className="w-10 h-10" />
             </button>
           </div>
 
           {/* Volume Control */}
           <div className="flex items-center gap-3 w-full max-w-xs">
-            <MdVolumeUp className="w-6 h-6 text-gray-400" />
+            <MdVolumeUp className="w-6 h-6 text-white" />
             <input
               type="range"
               min="0"
@@ -379,7 +381,7 @@ const MusicPlayer = forwardRef((
                 background: `linear-gradient(to right, #fff ${localVolume * 100}%, #374151 ${localVolume * 100}%)`
               }}
             />
-            <span className="text-sm text-gray-500 w-12 text-right">
+            <span className="text-sm text-white w-12 text-right">
               {Math.round(localVolume * 100)}%
             </span>
           </div>
