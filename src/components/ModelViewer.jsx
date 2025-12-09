@@ -2,7 +2,7 @@
 // Model Viewer //
 // ============ //
 
-import React, { Suspense, useMemo, useEffect, useState } from 'react';
+import React, { Suspense, useMemo, useEffect } from 'react';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
@@ -42,31 +42,11 @@ function Loader()
 
 function ModelViewer({ modelPath = "/models/Room.glb" }) 
 {
-  const [shouldLoad, setShouldLoad] = useState(false);
-
   // Detect if device is mobile
   const isMobile = useMemo(() => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
            window.innerWidth < 768;
   }, []);
-
-  // Lazy load: wait a bit after component mounts
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShouldLoad(true);
-    }, 100); // Small delay to let page render first
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!shouldLoad) {
-    return (
-      <div style={{ width: '100vw', height: '100vh', background: '#000' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-          <Riple size="large" color="white" text="" textColor="white" />
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
