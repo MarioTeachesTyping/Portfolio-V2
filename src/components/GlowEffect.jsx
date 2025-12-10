@@ -35,19 +35,23 @@ export function GlowEffect({ meshNames = DEFAULT_INTERACTIVE_MESHES })
         // Create outline geometry from the original mesh
         const outlineGeometry = obj.geometry.clone();
         const outlineMaterial = new THREE.MeshBasicMaterial({
-          color: 0xFFFFFF,
-          side: THREE.BackSide,
-          wireframe: false,
+          color: 0xffffff,
+          side: THREE.FrontSide,
+          transparent: true,
+          opacity: 0.8,
+          depthTest: false,
         });
 
         const outlineMesh = new THREE.Mesh(outlineGeometry, outlineMaterial);
+        outlineMesh.visible = false; // Hidden by default
+        
+        // Copy transforms and scale up slightly
         outlineMesh.position.copy(obj.position);
         outlineMesh.rotation.copy(obj.rotation);
-        outlineMesh.scale.copy(obj.scale);
-        outlineMesh.scale.multiplyScalar(1.03); // Slightly larger for outline effect
-
-        outlineMesh.visible = false; // Hidden by default
-        obj.add(outlineMesh);
+        outlineMesh.scale.copy(obj.scale).multiplyScalar(1.08);
+        
+        // Add to scene at same level as model
+        scene.add(outlineMesh);
 
         outlineObjectsRef.current[obj.name] = outlineMesh;
       }

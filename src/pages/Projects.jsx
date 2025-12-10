@@ -8,7 +8,7 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws } from 'react-icons/fa';
+import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio } from 'react-icons/si';
 
@@ -104,21 +104,11 @@ export default function Projects()
       image: "/videos/projects/portfolio.mp4",
       is_video: true,
       description: "You're looking at it.",
-      tech: [<SiVite key="vite" title="Vite" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
-             <SiJavascript key="javascript" title="JavaScript" />, <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />
+      tech: [<FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, <SiJavascript key="javascript" title="JavaScript" />, 
+             <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />, <FaLastfmSquare key="lastfm" title="Last.fm" />
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
     },
-    {
-      name: "Paracosm",
-      image: "/images/projects/paracosm.jpg",
-      description: "Web-accessible program that allows users to manipulate objects in Unity created 3D environment.",
-      tech: [<FaUnity key="unity" title="Unity" />, <SiOpencv key="opencv" title="OpenCV" />, 
-             <SiMediapipe key="mediapipe" title="MediaPipe" />, <SiFlask key="flask" title="Flask" />, <SiWebgl key="webgl" title="WebGL" />
-      ],
-      team: { icon: <RiTeamLine />, text: "Team Size: 3" },
-      link: "https://devpost.com/software/paracosm"
-    }
   ];
 
    return (
