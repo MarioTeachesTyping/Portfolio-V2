@@ -95,7 +95,7 @@ export default function NavBar()
           />
 
           <div className="flex items-center gap-3">
-            <div className="text-2xl" style={{ fontFamily: 'MarioFont' }}>Anthony Terry</div>
+            <div className="text-2xl" style={{ fontFamily: 'MinecraftFont' }}>Anthony Terry</div>
           </div>
         </div>
 

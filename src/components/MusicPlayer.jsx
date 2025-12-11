@@ -296,7 +296,7 @@ const MusicPlayer = forwardRef((
       {/* Music Player Modal */}
       <Modal isOpen={isModalOpen} onClose={onCloseModal}>
         <div className="flex flex-col items-center justify-center pt-4 px-8 pb-8">
-          <h2 className="text-5xl text-center mb-7 font-bold">Jukebox</h2>
+          <h2 className="text-5xl text-center mb-7 font-bold" style={{ fontFamily: 'MinecraftFont' }}>Jukebox</h2>
           <p className ="text-xl text-center mb-9">Enjoy some of my favorite tracks from different artists.</p>
           
           {/* Album Art */}

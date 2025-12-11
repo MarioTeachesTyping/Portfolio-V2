@@ -113,7 +113,7 @@ export default function Projects()
 
    return (
     <div>
-      <h2 className="text-5xl font-bold mb-9 mt-3 text-center">My Projects</h2>
+      <h2 className="text-5xl font-bold mb-9 mt-3 text-center" style={{ fontFamily: 'MinecraftFont' }}>My Projects</h2>
       <p className="text-xl text-center mb-11 mt-2">Always trying to improve. Thank you to anybody who worked, helped, or support any of these projects.</p>
       <div className="flex justify-center gap-6 flex-wrap">
         {projects.map((project, index) => (

@@ -96,7 +96,7 @@ export default function Experience()
 
   return (
     <div>
-      <h2 className="text-5xl text-center mb-9 mt-3 font-bold">My Experience</h2>
+      <h2 className="text-5xl text-center mb-9 mt-3 font-bold" style={{ fontFamily: 'MinecraftFont' }}>My Experience</h2>
       <p className="text-xl text-center mb-11 mt-2">
         Thank you to everybody who has supported me along the way in achieving opportunities like this. Especially my family and friends.
       </p>

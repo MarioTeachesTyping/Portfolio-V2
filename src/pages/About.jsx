@@ -116,7 +116,7 @@ export default function About()
         alt="PFP"
         className="w-78 h-80 border-12 border-white mx-auto block mb-6 mt-6 experience-card"
       />
-      <h2 className="text-6xl mb-10 text-center font-normal" style={{ fontFamily: 'MarioFont' }}>
+      <h2 className="text-6xl mb-10 text-center font-normal" style={{ fontFamily: 'MinecraftFont' }}>
         Anthony Terry
       </h2>
       <p className="text-xl text-gray-300 mx-auto text-center">

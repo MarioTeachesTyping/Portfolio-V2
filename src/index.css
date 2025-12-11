@@ -25,16 +25,27 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'MinecraftFont';
+  src: url('/fonts/Minecraft.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* keep the bar width */
 ::-webkit-scrollbar {
-  width: 8px; /* keep the bar width */
+  width: 8px;
 }
 
+/* remove background */
 ::-webkit-scrollbar-track {
-  background: transparent !important; /* remove background */
+  background: transparent !important;
 }
 
+/* the bar itself */
 ::-webkit-scrollbar-thumb {
-  background: #888;  /* the bar itself */
+  background: #888; 
   border-radius: 4px;
 }
 
