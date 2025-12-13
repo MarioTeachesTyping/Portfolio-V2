@@ -3,7 +3,7 @@
 // ============= //
 
 import React, { useEffect, useState } from 'react';
-import { IoCloseCircleOutline } from 'react-icons/io5';
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 export default function Modal({ isOpen, onClose, children }) 
 {
@@ -44,7 +44,7 @@ export default function Modal({ isOpen, onClose, children })
           onClick={onClose}
           className="absolute top-2 right-2 text-white hover:opacity-80 transition-transform duration-200 hover:scale-110"
         >
-          <IoCloseCircleOutline size={40} />
+          <AiOutlineCloseSquare size={40} />
         </button>
         {children}
       </div>

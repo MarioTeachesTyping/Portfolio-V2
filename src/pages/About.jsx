@@ -9,7 +9,7 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaMusic } from "react-icons/fa";
-import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb } from "react-icons/si";
+import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
 import { searchSpotifyTrack } from "../scripts/spotify";
@@ -155,8 +155,8 @@ export default function About()
           <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
           <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
           <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
+          <SiRobloxstudio className="w-16 h-16 wiggle-hover" title="Roblox Studio" />
           <SiAndroidstudio className="w-16 h-16 wiggle-hover" title="Android Studio" />
-          <SiBruno className="w-16 h-16 wiggle-hover" title="Bruno" />
         </div>
       </div>
 
