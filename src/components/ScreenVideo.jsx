@@ -8,11 +8,12 @@ import { useThree } from '@react-three/fiber';
 import { useProgress } from '@react-three/drei';
 
 export function ScreenVideo({ 
-  meshNames = ['Cube008', 'Cube008_1'], 
-  materialName = 'Screen',
-  videoSrc = '/videos/kpdh.mp4',
-  delaySeconds = 3
-}) {
+  meshNames, 
+  materialName,
+  videoSrc,
+  delaySeconds
+}) 
+{
   const { scene } = useThree();
   const { progress } = useProgress();
   const videoRef = useRef(null);
@@ -48,8 +49,11 @@ export function ScreenVideo({
       // Apply video to matching meshes
       scene.traverse((obj) => {
         if (obj.isMesh && meshNames.includes(obj.name)) {
+          // console.log(`Found mesh: ${obj.name}, Materials:`, obj.material);
           const applyVideoTexture = (mat) => {
+            // console.log(`Checking material: "${mat.name}" against "${materialName}"`);
             if (mat.name === materialName) {
+              // console.log(`✓ Applying video to material: ${mat.name}`);
               try {
                 const texture = new THREE.VideoTexture(video);
                 texture.flipY = false;

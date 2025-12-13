@@ -20,7 +20,15 @@ function Model({ modelPath })
   // For debugging and finding mesh names. I fucked up on blender...
   // const printHierarchy = (obj, indent = 0) => {
   //   const prefix = '  '.repeat(indent);
-  //   console.log(`${prefix}${obj.type}: "${obj.name}" ${obj.isMesh ? '(MESH)' : ''}`);
+  //   let materialInfo = '';
+  //   if (obj.isMesh && obj.material) {
+  //     if (Array.isArray(obj.material)) {
+  //       materialInfo = ` Materials: [${obj.material.map(m => m.name).join(', ')}]`;
+  //     } else {
+  //       materialInfo = ` Material: "${obj.material.name}"`;
+  //     }
+  //   }
+  //   console.log(`${prefix}${obj.type}: "${obj.name}" ${obj.isMesh ? '(MESH)' : ''}${materialInfo}`);
   //   obj.children.forEach(child => printHierarchy(child, indent + 1));
   // };
   // printHierarchy(scene);
@@ -103,6 +111,13 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
           meshNames={['Cube008', 'Cube008_1']}
           materialName="Screen"
           videoSrc="/videos/kpdh.mp4"
+          delaySeconds={3}
+        />
+
+        <ScreenVideo 
+          meshNames={['Cube024', 'Cube024_1']}
+          materialName="Monitor_Screen_H"
+          videoSrc="/videos/persona5.mp4"
           delaySeconds={3}
         />
 
