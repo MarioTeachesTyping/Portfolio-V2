@@ -8,7 +8,7 @@ import { SiBruno } from "react-icons/si"
 import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaMusic } from "react-icons/fa";
+import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaSpotify } from "react-icons/fa";
 import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio } from "react-icons/si";
 
 import { getLastFmTopTracks } from "../scripts/lastfm";
@@ -99,7 +99,7 @@ function TopTracks()
   return (
     <div className="rounded-2xl mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[75%] flex items-center justify-center flex-col mx-auto">
       <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-green-400 bg-black font-bold rounded-2xl px-6 py-2">
-        AJ's On Repeat... <FaMusic />
+        AJ's On Repeat... <FaSpotify />
       </h3>
       {topTracks ? topTracksGrid : placeholder}
     </div>

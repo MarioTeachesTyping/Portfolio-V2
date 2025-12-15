@@ -10,17 +10,15 @@ import Modal from "./Modal";
 import About from "../pages/About";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
-import MusicPlayer from "./MusicPlayer";
+import Music from "../pages/Music";
 
 export default function NavBar() 
 {
   const [showAbout, setShowAbout] = useState(false);
   const [showExperience, setShowExperience] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
-  const [showMusicPlayer, setShowMusicPlayer] = useState(false);
+  const [showMusic, setShowMusic] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const musicPlayerRef = useRef(null);
 
   // Memoize the tracks array so it stays stable across re-renders.
   const TRACKS = useMemo(() => [
@@ -65,23 +63,17 @@ export default function NavBar()
   const openAbout = () => { setShowAbout(true); setMenuOpen(false); };
   const openExperience = () => { setShowExperience(true); setMenuOpen(false); };
   const openProjects = () => { setShowProjects(true); setMenuOpen(false); };
-  const openMusicPlayer = () => { 
-    setShowMusicPlayer(true); 
+  const openMusic = () => { 
+    setShowMusic(true); 
     setMenuOpen(false);
   };
 
   return (
     <>
-      {/* Always-mounted, headless audio player. */}
-      <MusicPlayer
-        ref={musicPlayerRef}
-        tracks={TRACKS}
-        trackImages={TRACK_IMAGES}
-        trackArtists={TRACK_ARTISTS}
-        basePath="/music/"
-        volume={1.0}
-        isModalOpen={showMusicPlayer}
-        onCloseModal={() => setShowMusicPlayer(false)}
+      {/* Music component with Jukebox */}
+      <Music
+        isModalOpen={showMusic}
+        onCloseModal={() => setShowMusic(false)}
       />
 
       <div className="w-full border-3 border-white fixed top-0 left-0 bg-black text-white flex justify-between items-center px-6 py-5 z-50">
@@ -109,7 +101,7 @@ export default function NavBar()
           <button className="hover:bg-white/10" onClick={() => setShowProjects(true)}>
             Projects
           </button>
-          <button className="hover:bg-white/10" onClick={openMusicPlayer}>
+          <button className="hover:bg-white/10" onClick={openMusic}>
             Music
           </button>
 
@@ -198,7 +190,7 @@ export default function NavBar()
             <button
               type="button"
               className="inline-flex items-center justify-center w-10 h-10 hover:opacity-80 active:opacity-80 transition"
-              onClick={openMusicPlayer}
+              onClick={openMusic}
             >
               <MdLibraryMusic className="w-10 h-10" />
             </button>
