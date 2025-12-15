@@ -2,6 +2,7 @@
 
 It's cooler.
 
+---
 ![Web Screenshot](./public/images/website.jpg "Website Screenshot")
 
 ## Instructions
@@ -24,6 +25,7 @@ Portfolio
 ├── v2.30       - Screen Videos
 └── v2.40       - Jukebox (Music Player Overhaul)
     └── v2.41   - Project Badges
+    └── v2.42   - Minecraft Font
 ```
 
 ## Inspiration

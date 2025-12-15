@@ -142,21 +142,21 @@ const Music = ({ isModalOpen = false, onCloseModal = () => {} }) => {
           <div className="flex items-center gap-8 mb-8 mt-4">
             <button
               onClick={handlePrevTrack}
-              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-80"
+              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-60"
             >
               <IoIosSkipBackward className="w-10 h-10" />
             </button>
 
             <button
               onClick={handleTogglePlayPause}
-              className="hover:opacity-80 flex items-center justify-center transition-all active:scale-95 text-white"
+              className="hover:opacity-60 flex items-center justify-center transition-all active:scale-95 text-white"
             >
               {playState.isMuted ? <CgPlayButtonR className="w-20 h-20" /> : <CgPlayPauseR className="w-20 h-20" />}
             </button>
 
             <button
               onClick={handleNextTrack}
-              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-80"
+              className="w-16 h-16 flex items-center justify-center transition-all active:scale-95 text-white hover:opacity-60"
             >
               <IoIosSkipForward className="w-10 h-10" />
             </button>

@@ -92,16 +92,16 @@ export default function NavBar()
         </div>
 
         <div className="hidden md:flex space-x-8 text-lg items-center">
-          <button className="hover:bg-white/10" onClick={() => setShowAbout(true)}>
+          <button className="hover:bg-white/15" onClick={() => setShowAbout(true)}>
             About
           </button>
-          <button className="hover:bg-white/10" onClick={() => setShowExperience(true)}>
+          <button className="hover:bg-white/15" onClick={() => setShowExperience(true)}>
             Experience
           </button>
-          <button className="hover:bg-white/10" onClick={() => setShowProjects(true)}>
+          <button className="hover:bg-white/15" onClick={() => setShowProjects(true)}>
             Projects
           </button>
-          <button className="hover:bg-white/10" onClick={openMusic}>
+          <button className="hover:bg-white/15" onClick={openMusic}>
             Music
           </button>
 
@@ -111,7 +111,7 @@ export default function NavBar()
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
           >
-            <FaRegFileAlt className="w-10 h-10 hover:opacity-80" />
+            <FaRegFileAlt className="w-10 h-10 hover:opacity-60" />
           </a>
           <a
             href="https://github.com/MarioTeachesTyping"
@@ -119,7 +119,7 @@ export default function NavBar()
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
           >
-            <FaGithub className="w-10 h-10 hover:opacity-80" />
+            <FaGithub className="w-10 h-10 hover:opacity-60" />
           </a>
           <a
             href="https://www.linkedin.com/in/aj-terry/"
@@ -127,7 +127,7 @@ export default function NavBar()
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
           >
-            <FaLinkedin className="w-10 h-10 hover:opacity-80" />
+            <FaLinkedin className="w-10 h-10 hover:opacity-60" />
           </a>
         </div>
 
@@ -151,13 +151,13 @@ export default function NavBar()
       >
         <div className="p-3 divide-y divide-white/10">
           <div className="flex flex-col py-2">
-            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openAbout}>
+            <button className="text-center px-3 py-2 hover:bg-white/15" onClick={openAbout}>
               About
             </button>
-            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openExperience}>
+            <button className="text-center px-3 py-2 hover:bg-white/15" onClick={openExperience}>
               Experience
             </button>
-            <button className="text-center px-3 py-2 hover:bg-white/10" onClick={openProjects}>
+            <button className="text-center px-3 py-2 hover:bg-white/15" onClick={openProjects}>
               Projects
             </button>
           </div>
@@ -169,7 +169,7 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaRegFileAlt className="w-10 h-10 hover:opacity-80" />
+              <FaRegFileAlt className="w-10 h-10 hover:opacity-60" />
             </a>
             <a
               href="https://github.com/MarioTeachesTyping"
@@ -177,7 +177,7 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaGithub className="w-10 h-10 hover:opacity-80" />
+              <FaGithub className="w-10 h-10 hover:opacity-60" />
             </a>
             <a
               href="https://www.linkedin.com/in/aj-terry/"
@@ -185,11 +185,11 @@ export default function NavBar()
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
             >
-              <FaLinkedin className="w-10 h-10 hover:opacity-80" />
+              <FaLinkedin className="w-10 h-10 hover:opacity-60" />
             </a>
             <button
               type="button"
-              className="inline-flex items-center justify-center w-10 h-10 hover:opacity-80 active:opacity-80 transition"
+              className="inline-flex items-center justify-center w-10 h-10 hover:opacity-60 active:opacity-60 transition"
               onClick={openMusic}
             >
               <MdLibraryMusic className="w-10 h-10" />
