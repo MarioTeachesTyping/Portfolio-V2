@@ -19,16 +19,20 @@ pnpm run dev
 - [x] Add a music player
 - [x] Add top tracks using Last.fm
 - [x] LED lighting for room
-- [x] Allows to be played on model screens
+- [x] Allow videos to be played on model screens
 - [x] Revamp the music player as a jukebox
 - [x] Project badges for accomplishments
 - [ ] Make the model spin when untouched for a while
 - [ ] Add recent song played and top artist
 - [ ] Add a different modal animation for open and close
 - [ ] Add strudel songs in music page
+- [ ] Fix glow effect
+- [ ] Click TV and have it change channels
+- [ ] Click my PC and play a game
 - [ ] Try to use unique camera movements for suprises
 - [ ] Add blogs section
 - [ ] Revamp the room model
+- [ ] Change modal designs for different pages (v3.0 potentially)
 
 ## Timeline
 
