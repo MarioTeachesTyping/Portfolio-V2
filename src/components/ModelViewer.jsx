@@ -2,9 +2,9 @@
 // Model Viewer //
 // ============ //
 
-import React, { Suspense, useMemo, useEffect } from 'react';
+import React, { Suspense, useMemo, useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Html, useProgress } from '@react-three/drei';
 import { Stars } from '@react-three/drei';
 import { Riple } from 'react-loading-indicators';
@@ -12,10 +12,20 @@ import { Riple } from 'react-loading-indicators';
 // import { GlowEffect } from './GlowEffect';
 import { ScreenVideo } from './ScreenVideo';
 
-function Model({ modelPath }) 
+function Model({ modelPath, shouldRotate }) 
 {
   const { scene } = useGLTF(modelPath);
+  const modelRef = useRef();
+  
   scene.position.set(0, -4, 0);
+
+  // Rotate the model on each frame if shouldRotate is true
+  useFrame((state, delta) => {
+    if (shouldRotate.current && modelRef.current) 
+    {
+      modelRef.current.rotation.y += delta * 0.3; // 0.3 radians per second
+    }
+  });
 
   // For debugging and finding mesh names. I fucked up on blender...
   // const printHierarchy = (obj, indent = 0) => {
@@ -33,7 +43,7 @@ function Model({ modelPath })
   // };
   // printHierarchy(scene);
 
-  return <primitive object={scene} />;
+  return <primitive ref={modelRef} object={scene} />;
 }
 
 function Loader() 
@@ -48,8 +58,57 @@ function Loader()
   );
 }
 
+// Custom controls with idle detection
+function ControlsWithIdleDetection({ isMobile, shouldRotate }) 
+{
+  const idleTimeout = useRef(null);
+  
+  // Reset idle timer on any interaction
+  const handleInteraction = () => {
+    shouldRotate.current = false;
+    
+    // Clear existing timeout
+    if (idleTimeout.current) 
+    {
+      clearTimeout(idleTimeout.current);
+    }
+    
+    // Start new timeout (10 seconds of inactivity)
+    idleTimeout.current = setTimeout(() => {
+      shouldRotate.current = true;
+    }, 15000);
+  };
+  
+  useEffect(() => {
+    // Start the initial idle timer
+    handleInteraction();
+    
+    return () => {
+      if (idleTimeout.current) 
+      {
+        clearTimeout(idleTimeout.current);
+      }
+    };
+  }, []);
+  
+  return (
+    <OrbitControls
+      enablePan
+      enableZoom
+      enableRotate
+      maxPolarAngle={Math.PI / 2}
+      enableDamping={!isMobile}
+      dampingFactor={0.05}
+      onChange={handleInteraction}
+      onStart={handleInteraction}
+    />
+  );
+}
+
 function ModelViewer({ modelPath = "/models/Room.glb" }) 
 {
+  const shouldRotate = useRef(false);
+  
   // Detect if device is mobile
   const isMobile = useMemo(() => {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
@@ -102,7 +161,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         <Stars radius={100} depth={50} count={5000} factor={4} fade />
 
         <Suspense fallback={<Loader />}>
-          <Model modelPath={modelPath} />
+          <Model modelPath={modelPath} shouldRotate={shouldRotate} />
         </Suspense>
 
         {/* <GlowEffect /> */}
@@ -121,14 +180,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
           delaySeconds={3}
         />
 
-        <OrbitControls
-          enablePan
-          enableZoom
-          enableRotate
-          maxPolarAngle={Math.PI / 2}
-          enableDamping={!isMobile} // Disable damping on mobile for better performance
-          dampingFactor={0.05}
-        />
+        <ControlsWithIdleDetection isMobile={isMobile} shouldRotate={shouldRotate} />
       </Canvas>
     </div>
   );

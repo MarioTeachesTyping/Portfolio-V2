@@ -22,15 +22,16 @@ pnpm run dev
 - [x] Allow videos to be played on model screens
 - [x] Revamp the music player as a jukebox
 - [x] Project badges for accomplishments
-- [ ] Make the model spin when untouched for a while
+- [x] Make the model spin when untouched for a while
 - [ ] Add recent song played and top artist
+- [ ] Add unique tooltip UI for pc and mobile
 - [ ] Add a different modal animation for open and close
 - [ ] Add strudel songs in music page
 - [ ] Fix glow effect
 - [ ] Click TV and have it change channels
 - [ ] Click my PC and play a game
 - [ ] Try to use unique camera movements for suprises
-- [ ] Add blogs section
+- [ ] Add blogs page
 - [ ] Revamp the room model
 - [ ] Change modal designs for different pages (v3.0 potentially)
 
@@ -48,6 +49,7 @@ Portfolio
 └── v2.40       - Jukebox (Music Player Overhaul)
     └── v2.41   - Project Badges
     └── v2.42   - Minecraft Font
+    └── v2.43   - AFK Model Spin
 ```
 
 ## Inspiration
