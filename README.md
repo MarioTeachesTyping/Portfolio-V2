@@ -12,6 +12,24 @@ pnpm install
 pnpm run dev
 ```
 
+## Goals
+
+- [x] Set up project structure
+- [x] Create MVP for website
+- [x] Add a music player
+- [x] Add top tracks using Last.fm
+- [x] LED lighting for room
+- [x] Allows to be played on model screens
+- [x] Revamp the music player as a jukebox
+- [x] Project badges for accomplishments
+- [ ] Make the model spin when untouched for a while
+- [ ] Add recent song played and top artist
+- [ ] Add a different modal animation for open and close
+- [ ] Add strudel songs in music page
+- [ ] Try to use unique camera movements for suprises
+- [ ] Add blogs section
+- [ ] Revamp the room model
+
 ## Timeline
 
 ```
