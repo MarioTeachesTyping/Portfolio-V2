@@ -67,7 +67,7 @@ export default function Projects()
       is_video: true,
       description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
       tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />,
-             <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <FaReact key="react" title="React" />
+             <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <TbBrandNextjs key="nextjs" title="Next.js" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
@@ -77,7 +77,7 @@ export default function Projects()
       image: "/images/projects/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
       tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
-             <FaNodeJs key="nodejs" title="Node.js" />, <SiMongodb key="mongodb" title="MongoDB" />, <FaReact key="react" title="React" />
+             <SiFastapi key="fastapi" title="FastAPI" />, <SiMongodb key="mongodb" title="MongoDB" />, <TbBrandNextjs key="nextjs" title="Next.js" />
       ],
       link: "https://github.com/MarioTeachesTyping/MarioGPT"
     },
@@ -95,7 +95,7 @@ export default function Projects()
       name: "MyGameList",
       image: "/images/projects/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />, 
+      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <SiTypescript key="typescript" title="TypeScript" />, 
              <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaAws key="aws" title="AWS" />, <SiPrisma key="prisma" title="Prisma" />
       ]
     },

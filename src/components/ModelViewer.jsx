@@ -73,7 +73,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         
         {/* Single area light for overall purple ambiance */}
         <rectAreaLight
-          position={[0, 0, -5.5]}
+          position={[0, 0, -7.5]}
           width={12}
           height={8}
           color="#8b5cf6"
@@ -81,7 +81,7 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         />
 
         <rectAreaLight
-          position={[-1, 0, 3]}
+          position={[-1, 0, 5.8]}
           width={12}
           height={8}
           color="#8b5cf6"
