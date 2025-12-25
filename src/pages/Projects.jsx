@@ -10,7 +10,7 @@ import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio } from 'react-icons/si';
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiShadcnui, SiLeetcode } from 'react-icons/si';
 
 export default function Projects() 
 {
@@ -34,7 +34,7 @@ export default function Projects()
       badge: "Knight Hacks VII Winner",
       badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
-      tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
@@ -86,7 +86,7 @@ export default function Projects()
       image: "/videos/projects/fruit-slayer.mp4",
       is_video: true,
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
-      tech: [<SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
+      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
              <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
       ],
       link: "https://devpost.com/software/fruit-slayer"
@@ -108,6 +108,15 @@ export default function Projects()
              <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />, <FaLastfmSquare key="lastfm" title="Last.fm" />
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
+    },
+    {
+      name: "LeetBytes",
+      image: "/images/projects/leetbytes.jpg",
+      description: "Putting my LeetCode solutions on here while testing frontend libraries.",
+      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
+             <SiTypescript key="typescript" title="TypeScript" />, <SiShadcnui key="shadcnui" title="Shadcn" />, <SiLeetcode key="leetcode" title="LeetCode" />,
+      ],
+      link: "https://github.com/MarioTeachesTyping/LeetBytes"
     },
   ];
 
