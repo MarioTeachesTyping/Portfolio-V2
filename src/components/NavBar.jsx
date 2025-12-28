@@ -106,7 +106,7 @@ export default function NavBar()
           </button>
 
           <a
-            href="/images/Resume.pdf"
+            href="/resume.html"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
@@ -164,7 +164,7 @@ export default function NavBar()
 
           <div className="flex items-center justify-center gap-5 py-3 px-3">
             <a
-              href="/images/Resume.pdf"
+              href="/resume.html"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}

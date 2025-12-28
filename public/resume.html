@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Resume</title>
+    <link rel="icon" href="/images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* <- kills the outer scrollbar */
+        background: black;
+      }
+      iframe {
+        display: block;  /* <- removes inline iframe “extra space” */
+        width: 100vw;
+        height: 100vh;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="/images/Resume.pdf" title="Resume"></iframe>
+  </body>
+</html>
