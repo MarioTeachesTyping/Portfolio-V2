@@ -10,11 +10,11 @@ export default function Experience()
     {
       company: "The Walt Disney Company",
       role: "Software Engineer Intern",
-      date: "Jan 2026 - Jun 2026",
+      date: "Jan 2026 - Present",
       location: "Lake Buena Vista, FL",
       description: [
         "Incoming Software Engineer Intern for the GET SS-W-Attractions Systems Team at Disney Experiences.",
-        "I haven't started but trust me there will be some cool stuff here.",
+        "I will have something here soon.",
         "Give me some time and there will be more.",
       ],
       note: "I don't know how I got this opportunity...",
@@ -24,7 +24,7 @@ export default function Experience()
     {
       company: "Florida Blue",
       role: "Software Engineer Intern",
-      date: "May 2025 - Present",
+      date: "May 2025 - Dec 2025",
       location: "Jacksonville, FL",
       description: [
         "Built 20% of behavior-driven development functional test cases for the Sales website using Cucumber and Playwright, accelerating release cycles.",

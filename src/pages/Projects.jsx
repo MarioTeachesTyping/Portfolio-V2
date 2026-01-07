@@ -111,7 +111,7 @@ export default function Projects()
     },
     {
       name: "LeetBytes",
-      image: "/images/projects/leetbytes.jpg",
+      image: "/images/projects/leetbytes.gif",
       description: "Putting my LeetCode solutions on here while testing frontend libraries.",
       tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
              <SiTypescript key="typescript" title="TypeScript" />, <SiShadcnui key="shadcnui" title="Shadcn" />, <SiLeetcode key="leetcode" title="LeetCode" />,
