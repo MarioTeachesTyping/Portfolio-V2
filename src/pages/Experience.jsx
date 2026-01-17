@@ -13,9 +13,9 @@ export default function Experience()
       date: "Jan 2026 - Present",
       location: "Lake Buena Vista, FL",
       description: [
-        "Incoming Software Engineer Intern for the GET SS-W-Attractions Systems Team at Disney Experiences.",
-        "I will have something here soon.",
-        "Give me some time and there will be more.",
+        "Developed secure API key's in C# to connect trigger guard services between frontend and backend systems.",
+        "Refactored Blazor components to enhance responsiveness, accessibility, and error handling, ensuring more reliable user interactions.",
+        "Integrated Splunk logging to monitor trigger guard events, enabling debugging and performance insights.",
       ],
       note: "I don't know how I got this opportunity...",
       logo: "/images/experiences/disney.jpg",
@@ -32,13 +32,13 @@ export default function Experience()
         "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed by 23%.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
-      note: "Extended my internship! Thank you P360 and Sales Team!",
+      note: "Extended my internship! Thank you P360 and Sales Team for being my first internship!",
       logo: "/images/experiences/florida-blue.jpg",
       link: "https://www.floridablue.com/",
     },
     {
       company: "Knight Hacks",
-      role: "Workshop Director",
+      role: "Hackathon Organizer",
       date: "Aug 2024 - Present",
       location: "Orlando, FL",
       description: [

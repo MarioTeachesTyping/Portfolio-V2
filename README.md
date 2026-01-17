@@ -23,7 +23,7 @@ pnpm run dev
 - [x] Revamp the music player as a jukebox
 - [x] Project badges for accomplishments
 - [x] Make the model spin when untouched for a while
-- [ ] Add recent song played and top artist
+- [x] Add recent song played and top albums
 - [ ] Add unique tooltip UI for pc and mobile
 - [ ] Add a different modal animation for open and close
 - [ ] Add strudel songs in music page

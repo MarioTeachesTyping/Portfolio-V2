@@ -41,6 +41,19 @@ export default function Projects()
       link: "https://devpost.com/software/formify-k8vl4r"
     },
     {
+      name: "CivicLens",
+      image: "/videos/projects/civiclens.mp4",
+      is_video: true,
+      // badge: "ColorStack Winter Winner",
+      // badge_color: "border-orange-200 text-orange-200",
+      description: "Built a civic transparency platform aggregating data for congressional representatives using reliable government sources, and responsible AI.",
+      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <RiSupabaseFill key="supabase" title="Supabase" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, 
+             <SiFastapi key="fastapi" title="FastAPI" />, <TbBrandNextjs key="nextjs" title="Next.js" />, <SiMapbox key="mapbox" title="Mapbox" />
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 4" },
+      link: "https://devpost.com/software/civiclens-xhi3ym"
+    },
+    {
       name: "Potara",
       image: "/videos/projects/potara.mp4",
       is_video: true,
