@@ -95,22 +95,40 @@ const Music = ({ isModalOpen = false, onCloseModal = () => {} }) => {
           <h2 className="text-5xl text-center mb-7 font-bold" style={{ fontFamily: 'MinecraftFont' }}>Jukebox</h2>
           <p className="text-xl text-center mb-9">Enjoy some of my favorite tracks from different artists.</p>
           
-          {/* Album Art */}
-          <div className="w-74 h-74 bg-black border-4 border-white mb-8 flex items-center justify-center shadow-2xl overflow-hidden experience-card">
-            {trackInfo.trackImage ? (
-              <img 
-                src={trackInfo.trackImage} 
-                alt={trackInfo.trackName}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  console.error('Failed to load image:', trackInfo.trackImage);
-                  e.target.style.display = 'none';
-                }}
-                onLoad={() => console.log('Image loaded:', trackInfo.trackImage)}
-              />
-            ) : (
-              <MdLibraryMusic className="w-40 h-40 text-white/80" />
-            )}
+          {/* Album Art with Vinyl Record */}
+          <div className="relative mb-8 flex items-center justify-center" style={{ marginLeft: '-130px' }}>
+            {/* Album Cover (Square with art) - Left side */}
+            <div className="relative w-74 h-74 bg-black border-4 border-white flex items-center justify-center shadow-2xl overflow-hidden experience-card" style={{ zIndex: 2 }}>
+              {trackInfo.trackImage ? (
+                <img 
+                  src={trackInfo.trackImage} 
+                  alt={trackInfo.trackName}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    console.error('Failed to load image:', trackInfo.trackImage);
+                    e.target.style.display = 'none';
+                  }}
+                  onLoad={() => console.log('Image loaded:', trackInfo.trackImage)}
+                />
+              ) : (
+                <MdLibraryMusic className="w-40 h-40 text-white/80" />
+              )}
+            </div>
+            
+            {/* Vinyl Record (Circular, spins) - Behind, right half showing */}
+            <img 
+              src="images/record.png" 
+              alt="Vinyl Record"
+              className={`absolute w-74 h-74 object-contain ${!playState.isMuted && playState.isPlaying ? 'animate-spin-slow' : ''}`}
+              style={{ 
+                left: '128px',
+                zIndex: 1
+              }}
+              onError={(e) => {
+                console.error('Failed to load record.png');
+              }}
+              onLoad={() => console.log('Record loaded!')}
+            />
           </div>
 
           {/* Song Title */}

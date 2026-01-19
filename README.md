@@ -50,6 +50,7 @@ Portfolio
     └── v2.41   - Project Badges
     └── v2.42   - Minecraft Font
     └── v2.43   - AFK Model Spin
+    └── v2.44   - Last Played & Top Albums
 ```
 
 ## Inspiration

@@ -68,10 +68,10 @@ function CurrentlyPlaying()
         <img
           src={currentTrack.imgUrl}
           alt={`Cover of ${currentTrack.name}`}
-          className="w-[160px] aspect-square object-cover"
+          className="w-[140px] aspect-square object-cover"
         />
       ) : (
-        <div className="w-[160px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
+        <div className="w-[140px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
           No Art...
         </div>
       )}
@@ -138,10 +138,10 @@ function TopTracks()
               <img
                 src={info.imgUrl}
                 alt={`Cover of ${info.name}`}
-                className="w-[160px] aspect-square object-cover"
+                className="w-[140px] aspect-square object-cover"
               />
             ) : (
-              <div className="w-[160px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
+              <div className="w-[140px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
                 No Art...
               </div>
             )}
@@ -300,13 +300,13 @@ export default function About()
       </div>
 
       {/* Music Section */}
-      <div className="rounded-2xl mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto">
+      <div className="mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto flex flex-col items-center">
         <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-green-400 bg-black font-bold rounded-2xl px-6 py-2 mx-auto w-fit">
           Top Tracks This Week:
         </h3>
         
-        {/* Currently Playing + Top Tracks in Single Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
+        {/* Currently Playing + Top Tracks in Flex Row */}
+        <div className="flex flex-wrap justify-center gap-1">
           <CurrentlyPlaying />
           <TopTracks />
         </div>

@@ -171,6 +171,11 @@
   }
 }
 
+/* Spinning animation for Vinyl Record */
+.animate-spin-slow {
+  animation: spin 2.5s linear infinite;
+}
+
 /* Custom Slider Styling */
 .slider::-webkit-slider-thumb {
   appearance: none;
