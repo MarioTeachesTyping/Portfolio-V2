@@ -96,7 +96,7 @@ const Music = ({ isModalOpen = false, onCloseModal = () => {} }) => {
           <p className="text-xl text-center mb-9">Enjoy some of my favorite tracks from different artists.</p>
           
           {/* Album Art with Vinyl Record */}
-          <div className="relative mb-8 flex items-center justify-center" style={{ marginLeft: '-130px' }}>
+          <div className="relative mb-8 flex items-center justify-center" style={{ marginLeft: '-125px' }}>
             {/* Album Cover (Square with art) - Left side */}
             <div className="relative w-74 h-74 bg-black border-4 border-white flex items-center justify-center shadow-2xl overflow-hidden experience-card" style={{ zIndex: 2 }}>
               {trackInfo.trackImage ? (

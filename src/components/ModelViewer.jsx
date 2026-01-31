@@ -115,10 +115,15 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
            window.innerWidth < 768;
   }, []);
 
+  // Adjust camera position based on device
+  const cameraPosition = useMemo(() => {
+    return isMobile ? [35, 15, -28] : [20, 10, -20];
+  }, [isMobile]);
+
   return (
     <div style={{ width: '100vw', height: '100vh' }}>
       <Canvas 
-        camera={{ position: [20, 10, -20], fov: 40 }}
+        camera={{ position: cameraPosition, fov: 40 }}
         gl={{ 
           antialias: !isMobile, // Disable antialiasing on mobile
           toneMapping: THREE.ACESFilmicToneMapping, 

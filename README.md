@@ -40,18 +40,21 @@ pnpm run dev
 ```
 Portfolio
 ├── v2.00       - New Portfolio Created
-│   ├── v2.01   - Super Mario Font
-│   └── v2.02   - Loading...
+│   └── v2.01   - Loading...
 ├── v2.10       - Music Player
 ├── v2.20       - Top Tracks
 │   └── v2.21   - LED Lighting
 ├── v2.30       - Screen Videos
 └── v2.40       - Jukebox (Music Player Overhaul)
     └── v2.41   - Project Badges
-    └── v2.42   - Minecraft Font
-    └── v2.43   - AFK Model Spin
-    └── v2.44   - Last Played & Top Albums
+    └── v2.42   - AFK Model Spin
+    └── v2.43   - Last Played & Top Albums
+    └── v2.43   - Record Player Music Page
 ```
+
+## Notes
+
+For projects page, make it look like a computer screen and each project is a folder. The user clicks the folder and it opens another modal showcasing the project, this time with more info, like specific team members, timeline on how it was created, etc.
 
 ## Inspiration
 
@@ -61,4 +64,4 @@ Portfolio
 
 [Rafael Niebles Portfolio](https://www.rnieb.dev/)
 
-[Katherina Dayaon's Portfolio](https://katherinadayaon.me/)
+[Katherina Dayaon's Portfolio](https://katdayaon.art/)
