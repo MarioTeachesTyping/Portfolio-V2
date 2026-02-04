@@ -46,6 +46,48 @@ function Model({ modelPath, shouldRotate })
   return <primitive ref={modelRef} object={scene} />;
 }
 
+function RotatingLights({ shouldRotate }) 
+{
+  const groupRef = useRef();
+
+  // Rotate lights on each frame if shouldRotate is true
+  useFrame((state, delta) => {
+    if (shouldRotate.current && groupRef.current) 
+    {
+      groupRef.current.rotation.y += delta * 0.3; // Same rotation speed as model
+    }
+  });
+
+  return (
+    <group ref={groupRef}>
+      {/* Single area light for overall purple ambiance */}
+      <rectAreaLight
+        position={[0, 0, -7.5]}
+        width={12}
+        height={8}
+        color="#8b5cf6"
+        intensity={0.8}
+      />
+
+      <rectAreaLight
+        position={[-1, 0, 5.8]}
+        width={12}
+        height={8}
+        color="#8b5cf6"
+        intensity={1.8}
+      />
+
+      <rectAreaLight
+        position={[1, 0, 6]}
+        width={12}
+        height={8}
+        color="#8b5cf6"
+        intensity={1.8}
+      />
+    </group>
+  );
+}
+
 function Loader() 
 {
   const { active } = useProgress();
@@ -135,30 +177,8 @@ function ModelViewer({ modelPath = "/models/Room.glb" })
         {/* Enhanced ambient for purple glow */}
         <ambientLight intensity={0.25} color="#b8a5d9" />
         
-        {/* Single area light for overall purple ambiance */}
-        <rectAreaLight
-          position={[0, 0, -7.5]}
-          width={12}
-          height={8}
-          color="#8b5cf6"
-          intensity={0.8}
-        />
-
-        <rectAreaLight
-          position={[-1, 0, 5.8]}
-          width={12}
-          height={8}
-          color="#8b5cf6"
-          intensity={1.8}
-        />
-
-        <rectAreaLight
-          position={[1, 0, 6]}
-          width={12}
-          height={8}
-          color="#8b5cf6"
-          intensity={1.8}
-        />
+        {/* Rotating lights */}
+        <RotatingLights shouldRotate={shouldRotate} />
         
         {/* Purple-tinted hemisphere */}
         <hemisphereLight skyColor="#c4b5fd" groundColor="#7c3aed" intensity={0.4} />

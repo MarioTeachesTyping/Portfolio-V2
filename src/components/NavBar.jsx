@@ -3,8 +3,7 @@
 // ======= //
 
 import { useState, useMemo, useRef } from "react";
-import { FaGithub, FaLinkedin, FaRegFileAlt } from "react-icons/fa";
-import { MdLibraryMusic } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaRegFileAlt, FaHeadphones } from "react-icons/fa";
 
 import Modal from "./Modal";
 import About from "../pages/About";
@@ -192,7 +191,7 @@ export default function NavBar()
               className="inline-flex items-center justify-center w-10 h-10 hover:opacity-60 active:opacity-60 transition"
               onClick={openMusic}
             >
-              <MdLibraryMusic className="w-10 h-10" />
+              <FaHeadphones className="w-10 h-10" />
             </button>
           </div>
         </div>

@@ -129,52 +129,56 @@ function TopTracks()
           })
         );
 
-        const components = withArt.map((info, index) => (
-          <div
-            key={index}
-            className="bg-red flex items-center flex-col justify-top animate-jump-in"
-          >
-            {info.imgUrl ? (
-              <img
-                src={info.imgUrl}
-                alt={`Cover of ${info.name}`}
-                className="w-[140px] aspect-square object-cover"
-              />
-            ) : (
-              <div className="w-[140px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
-                No Art...
-              </div>
-            )}
-            <p className="font-bold text-center flex flex-col text-[1rem] break-all px-2 mt-2">
-              <span className="font-normal text-[0.9rem] text-gray-400">#{index + 1}</span>
-              {info.name}
-            </p>
-            <p className="text-gray-300 text-center text-[0.95rem] px-2">{info.artist}</p>
-            <p className="text-gray-500 text-center text-[0.9rem] px-2 pb-2">{info.playcount} Plays</p>
-          </div>
-        ));
-
-        setTopTracks(components);
+        setTopTracks(withArt);
       })
       .catch((error) => {
         console.log("Unable to generate track info:", error);
       });
   }, []);
 
-  if (!topTracks) 
-  {
-    return (
-      <>
-        <div className="flex items-center justify-center font-bold bg-black p-4 rounded-2xl">
-          Fetching...
-        </div>
-        <div className="hidden sm:block" />
-        <div className="hidden sm:block" />
-      </>
-    );
-  }
+  const placeholder = (
+    <p className="flex items-center justify-center font-bold bg-black p-4 rounded-2xl w-full">
+      Fetching...
+    </p>
+  );
 
-  return topTracks;
+  const topTracksComponents = topTracks ? topTracks.map((info, index) => (
+    <div
+      key={index}
+      className="bg-red flex items-center flex-col justify-top animate-jump-in"
+    >
+      {info.imgUrl ? (
+        <img
+          src={info.imgUrl}
+          alt={`Cover of ${info.name}`}
+          className="w-[140px] aspect-square object-cover"
+        />
+      ) : (
+        <div className="w-[140px] aspect-square bg-neutral-800 grid place-items-center text-sm border border-white/20">
+          No Art...
+        </div>
+      )}
+      <p className="font-bold text-center flex flex-col text-[1rem] break-all px-2 mt-2">
+        <span className="font-normal text-[0.9rem] text-gray-400">#{index + 1}</span>
+        {info.name}
+      </p>
+      <p className="text-gray-300 text-center text-[0.95rem] px-2">{info.artist}</p>
+      <p className="text-gray-500 text-center text-[0.9rem] px-2 pb-2">{info.playcount} Plays</p>
+    </div>
+  )) : null;
+
+  return (
+    <div className="mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto flex flex-col items-center">
+      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-white-400 bg-black font-bold rounded-2xl px-6 py-2 mx-auto w-fit">
+        Top Tracks This Week...
+      </h3>
+      
+      <div className="flex flex-wrap justify-center gap-1">
+        <CurrentlyPlaying />
+        {topTracksComponents || placeholder}
+      </div>
+    </div>
+  );
 }
 
 function TopAlbums() 
@@ -236,8 +240,8 @@ function TopAlbums()
 
   return (
     <div className="rounded-2xl mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] flex items-center justify-center flex-col mx-auto">
-      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-red-400 bg-black font-bold rounded-2xl px-6 py-2">
-        Top Albums This Month:
+      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-white-400 bg-black font-bold rounded-2xl px-6 py-2">
+        Top Albums This Month...
       </h3>
       {topAlbums ? topAlbumsGrid : placeholder}
     </div>
@@ -300,17 +304,7 @@ export default function About()
       </div>
 
       {/* Music Section */}
-      <div className="mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto flex flex-col items-center">
-        <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-green-400 bg-black font-bold rounded-2xl px-6 py-2 mx-auto w-fit">
-          Top Tracks This Week:
-        </h3>
-        
-        {/* Currently Playing + Top Tracks in Flex Row */}
-        <div className="flex flex-wrap justify-center gap-1">
-          <CurrentlyPlaying />
-          <TopTracks />
-        </div>
-      </div>
+      <TopTracks />
 
       {/* Top Albums */}
       <TopAlbums />

@@ -55,6 +55,8 @@ Portfolio
 ## Notes
 
 For projects page, make it look like a computer screen and each project is a folder. The user clicks the folder and it opens another modal showcasing the project, this time with more info, like specific team members, timeline on how it was created, etc.
+For experience page, make it go to the TV and act like a news channel is on. On the news channel could be my different experiences I've gotten and stuff like that.
+For music, I can make it go to my vinyl player that will be added to the updated model or the guitar.
 
 ## Inspiration
 
