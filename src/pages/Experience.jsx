@@ -38,8 +38,8 @@ export default function Experience()
     },
     {
       company: "Knight Hacks",
-      role: "Hackathon Organizer",
-      date: "Aug 2024 - Present",
+      role: "Workshop Director",
+      date: "Aug 2024 - Jan 2026",
       location: "Orlando, FL",
       description: [
         "Managed a team of 13 to teach 500+ students professional and software development skills in workshops.",

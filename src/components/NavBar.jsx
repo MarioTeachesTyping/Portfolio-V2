@@ -94,10 +94,10 @@ export default function NavBar()
           <button className="hover:bg-white/15" onClick={() => setShowAbout(true)}>
             About
           </button>
-          <button className="hover:bg-white/15" onClick={() => setShowExperience(true)}>
+          <button className="hover:bg-white/15" onClick={openExperience}>
             Experience
           </button>
-          <button className="hover:bg-white/15" onClick={() => setShowProjects(true)}>
+          <button className="hover:bg-white/15" onClick={openProjects}>
             Projects
           </button>
           <button className="hover:bg-white/15" onClick={openMusic}>
@@ -209,6 +209,33 @@ export default function NavBar()
       <Modal isOpen={showProjects} onClose={() => { setShowProjects(false); setMenuOpen(false); }}>
         <Projects />
       </Modal>
+
+      {/* ===== SHELVED: Camera Navigation on Modal Close =====
+      To enable camera reset when closing modals, replace the above Modal onClose handlers with:
+      <Modal isOpen={showAbout} onClose={() => { 
+        setShowAbout(false); 
+        setMenuOpen(false);
+        window.dispatchEvent(new CustomEvent('navigateCamera', { detail: { page: 'default' } }));
+      }}>
+        <About />
+      </Modal>
+
+      <Modal isOpen={showExperience} onClose={() => { 
+        setShowExperience(false); 
+        setMenuOpen(false);
+        window.dispatchEvent(new CustomEvent('navigateCamera', { detail: { page: 'default' } }));
+      }}>
+        <Experience />
+      </Modal>
+
+      <Modal isOpen={showProjects} onClose={() => { 
+        setShowProjects(false); 
+        setMenuOpen(false);
+        window.dispatchEvent(new CustomEvent('navigateCamera', { detail: { page: 'default' } }));
+      }}>
+        <Projects />
+      </Modal>
+      */}
     </>
   );
 }

@@ -11,6 +11,7 @@ import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaSpotify } from "react-icons/fa";
 import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio, SiFastapi } from "react-icons/si";
 
+import Tooltip from "../components/Tooltip";
 import { getLastFmTopTracks, getLastFmCurrentTrack, getLastFmTopAlbums } from "../scripts/lastfm";
 import { searchSpotifyTrack } from "../scripts/spotify";
 
@@ -272,34 +273,34 @@ export default function About()
       <div className="mt-10">
         <h3 className="text-3xl text-center mb-6">What I Like to Build with:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
-          <FaPython className="w-16 h-16 wiggle-hover" title="Python" />
-          <FaJava className="w-16 h-16 wiggle-hover" title="Java" />
-          <SiC className="w-16 h-16 wiggle-hover" title="C" />
-          <SiCplusplus className="w-16 h-16 wiggle-hover" title="C++" />
-          <SiJavascript className="w-16 h-16 wiggle-hover" title="JavaScript" />
-          <SiTypescript className="w-16 h-16 wiggle-hover" title="TypeScript" />
-          <FaReact className="w-16 h-16 wiggle-hover" title="React" />
-          <SiTailwindcss className="w-16 h-16 wiggle-hover" title="Tailwind CSS" />
-          <BiLogoPostgresql className="w-16 h-16 wiggle-hover" title="PostgreSQL" />
-          <FaDocker className="w-16 h-16 wiggle-hover" title="Docker" />
-          <SiFastapi className="w-16 h-16 wiggle-hover" title="FastAPI" />
+          <Tooltip text="Python"><FaPython className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Java"><FaJava className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="C"><SiC className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="C++"><SiCplusplus className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="JavaScript"><SiJavascript className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="TypeScript"><SiTypescript className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="React"><FaReact className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Tailwind CSS"><SiTailwindcss className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="PostgreSQL"><BiLogoPostgresql className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Docker"><FaDocker className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="FastAPI"><SiFastapi className="w-16 h-16 wiggle-hover" /></Tooltip>
         </div>
       </div>
 
       <div className="mt-10">
         <h3 className="text-3xl text-center mb-6">Learning and Getting Better at:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
-          <FaLinux className="w-16 h-16 wiggle-hover" title="Linux" />
-          <FaNodeJs className="w-16 h-16 wiggle-hover" title="Node.js" />
-          <TbBrandNextjs className="w-16 h-16 wiggle-hover" title="Next.js" />
-          <SiMongodb className="w-16 h-16 wiggle-hover" title="MongoDB" />
-          <FaFigma className="w-16 h-16 wiggle-hover" title="Figma" />
-          <FaAws className="w-16 h-16 wiggle-hover" title="Amazon Web Services" />
-          <TbBrandThreejs className="w-16 h-16 wiggle-hover" title="Three.js" />
-          <SiBlender className="w-16 h-16 wiggle-hover" title="Blender" />
-          <FaUnity className="w-16 h-16 wiggle-hover" title="Unity" />
-          <SiRobloxstudio className="w-16 h-16 wiggle-hover" title="Roblox Studio" />
-          <SiAndroidstudio className="w-16 h-16 wiggle-hover" title="Android Studio" />
+          <Tooltip text="Linux"><FaLinux className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Node.js"><FaNodeJs className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Next.js"><TbBrandNextjs className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="MongoDB"><SiMongodb className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Figma"><FaFigma className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Amazon Web Services"><FaAws className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Three.js"><TbBrandThreejs className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Blender"><SiBlender className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Unity"><FaUnity className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Roblox Studio"><SiRobloxstudio className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Android Studio"><SiAndroidstudio className="w-16 h-16 wiggle-hover" /></Tooltip>
         </div>
       </div>
 

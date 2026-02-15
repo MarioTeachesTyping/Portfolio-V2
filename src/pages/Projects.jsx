@@ -12,6 +12,8 @@ import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws
 import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiShadcnui, SiLeetcode } from 'react-icons/si';
 
+import Tooltip from "../components/Tooltip";
+
 export default function Projects() 
 {
   const projects = [
@@ -22,8 +24,8 @@ export default function Projects()
       badge: "JPMC Code for Good Winner",
       badge_color: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
-      tech: [<RiSupabaseFill key="supabase" title="Supabase" />, <SiFastapi key="fastapi" title="FastAPI" />, <SiPosthog key="posthog" title="PostHog" />, 
-             <FaReact key="react" title="React" />, <SiMapbox key="mapbox" title="Mapbox" />, <SiLeaflet key="leaflet" title="Leaflet" />
+      tech: [<Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="PostHog"><SiPosthog key="posthog" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>, <Tooltip text="Leaflet"><SiLeaflet key="leaflet" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 7" },
       link: "https://github.com/MarioTeachesTyping/CareerWise"
@@ -34,8 +36,8 @@ export default function Projects()
       badge: "Knight Hacks VII Winner",
       badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
-      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
-             <SiFlask key="flask" title="Flask" />, <SiCplusplus key="cplusplus" title="C++" />, <SiArduino key="arduino" title="Arduino" />
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="Flask"><SiFlask key="flask" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/formify-k8vl4r"
@@ -47,8 +49,8 @@ export default function Projects()
       // badge: "ColorStack Winter Winner",
       // badge_color: "border-orange-200 text-orange-200",
       description: "Built a civic transparency platform aggregating data for congressional representatives using reliable government sources, and responsible AI.",
-      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <RiSupabaseFill key="supabase" title="Supabase" />, <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, 
-             <SiFastapi key="fastapi" title="FastAPI" />, <TbBrandNextjs key="nextjs" title="Next.js" />, <SiMapbox key="mapbox" title="Mapbox" />
+      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, <Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/civiclens-xhi3ym"
@@ -58,8 +60,8 @@ export default function Projects()
       image: "/videos/projects/potara.mp4",
       is_video: true,
       description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
-      tech: [<RiGeminiFill key="gemini" title="Google Gemini" />, <FaReact key="react" title="React" />, <SiNginx key="nginx" title="NGINX" />,
-             <SiMinio key="minio" title="MinIO" />, <SiExpress key="express" title="Express.js" />, <FaDocker key="docker" title="Docker" />
+      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="NGINX"><SiNginx key="nginx" /></Tooltip>,
+             <Tooltip text="MinIO"><SiMinio key="minio" /></Tooltip>, <Tooltip text="Express.js"><SiExpress key="express" /></Tooltip>, <Tooltip text="Docker"><FaDocker key="docker" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/potara"
@@ -69,8 +71,8 @@ export default function Projects()
       image: "/videos/projects/tamagario.mp4",
       is_video: true,
       description: "Take care of a pet Mario inspired by Tamagotchi. Play, feed, clean, or rest with Mario and evolve him to his invincible super star form!",
-      tech: [<SiAndroidstudio key="androidstudio" title="Android Studio" />,
-             <FaJava key="java" title="Java" />,
+      tech: [<Tooltip text="Android Studio"><SiAndroidstudio key="androidstudio" /></Tooltip>,
+             <Tooltip text="Java"><FaJava key="java" /></Tooltip>,
       ],
       link: "https://github.com/MarioTeachesTyping/Tamagario"
     },
@@ -79,8 +81,8 @@ export default function Projects()
       image: "/videos/projects/hot-dog.mp4",
       is_video: true,
       description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
-      tech: [<SiNvidia key="nvidia" title="NVIDIA" />, <FaGoogle key="google" title="Google ADK" />,
-             <FaPython key="python" title="Python" />, <SiCplusplus key="cplusplus" title="C++" />, <TbBrandNextjs key="nextjs" title="Next.js" />
+      tech: [<Tooltip text="NVIDIA"><SiNvidia key="nvidia" /></Tooltip>, <Tooltip text="Google ADK"><FaGoogle key="google" /></Tooltip>,
+             <Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
@@ -89,8 +91,8 @@ export default function Projects()
       name: "MarioGPT",
       image: "/images/projects/mario.png",
       description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
-      tech: [<FaPython key="python" title="Python" />, <SiOllama key="llama" title="Llama" />, <SiLangchain key="langchain" title="LangChain" />, 
-             <SiFastapi key="fastapi" title="FastAPI" />, <SiMongodb key="mongodb" title="MongoDB" />, <TbBrandNextjs key="nextjs" title="Next.js" />
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="Llama"><SiOllama key="llama" /></Tooltip>, <Tooltip text="LangChain"><SiLangchain key="langchain" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="MongoDB"><SiMongodb key="mongodb" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>
       ],
       link: "https://github.com/MarioTeachesTyping/MarioGPT"
     },
@@ -99,8 +101,8 @@ export default function Projects()
       image: "/videos/projects/fruit-slayer.mp4",
       is_video: true,
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
-      tech: [<FaPython key="python" title="Python" />, <SiOpencv key="opencv" title="OpenCV" />, <SiMediapipe key="mediapipe" title="MediaPipe" />, 
-             <FaReact key="react" title="React" />, <SiTypescript key="typescript" title="TypeScript" />
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>
       ],
       link: "https://devpost.com/software/fruit-slayer"
     },
@@ -108,8 +110,8 @@ export default function Projects()
       name: "MyGameList",
       image: "/images/projects/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <SiTypescript key="typescript" title="TypeScript" />, 
-             <BiLogoPostgresql key="postgresql" title="PostgreSQL" />, <FaAws key="aws" title="AWS" />, <SiPrisma key="prisma" title="Prisma" />
+      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, 
+             <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, <Tooltip text="AWS"><FaAws key="aws" /></Tooltip>, <Tooltip text="Prisma"><SiPrisma key="prisma" /></Tooltip>
       ]
     },
     {
@@ -117,8 +119,8 @@ export default function Projects()
       image: "/videos/projects/portfolio.mp4",
       is_video: true,
       description: "You're looking at it.",
-      tech: [<FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, <SiJavascript key="javascript" title="JavaScript" />, 
-             <TbBrandThreejs key="threejs" title="Three.js" />, <SiBlender key="blender" title="Blender" />, <FaLastfmSquare key="lastfm" title="Last.fm" />
+      tech: [<Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Tailwind CSS"><SiTailwindcss key="tailwindcss" /></Tooltip>, <Tooltip text="JavaScript"><SiJavascript key="javascript" /></Tooltip>, 
+             <Tooltip text="Three.js"><TbBrandThreejs key="threejs" /></Tooltip>, <Tooltip text="Blender"><SiBlender key="blender" /></Tooltip>, <Tooltip text="Last.fm"><FaLastfmSquare key="lastfm" /></Tooltip>
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
     },
@@ -126,8 +128,8 @@ export default function Projects()
       name: "LeetBytes",
       image: "/images/projects/leetbytes.gif",
       description: "Putting my LeetCode solutions on here while testing frontend libraries.",
-      tech: [<TbBrandNextjs key="nextjs" title="Next.js" />, <FaReact key="react" title="React" />, <SiTailwindcss key="tailwindcss" title="Tailwind CSS" />, 
-             <SiTypescript key="typescript" title="TypeScript" />, <SiShadcnui key="shadcnui" title="Shadcn" />, <SiLeetcode key="leetcode" title="LeetCode" />,
+      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Tailwind CSS"><SiTailwindcss key="tailwindcss" /></Tooltip>, 
+             <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, <Tooltip text="Shadcn"><SiShadcnui key="shadcnui" /></Tooltip>, <Tooltip text="LeetCode"><SiLeetcode key="leetcode" /></Tooltip>,
       ],
       link: "https://github.com/MarioTeachesTyping/LeetBytes"
     },
