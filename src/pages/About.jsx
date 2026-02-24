@@ -4,12 +4,12 @@
 
 import React, { useEffect, useState } from "react";
 
-import { SiBruno } from "react-icons/si"
-import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
+import { FaUnity, FaWindows } from "react-icons/fa6";
+import { SiBruno, SiPostman, SiGitkraken } from "react-icons/si"
+import { TbBrandCSharp, TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs, FaSpotify } from "react-icons/fa";
-import { SiC, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio, SiFastapi } from "react-icons/si";
+import { SiBlazor, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio, SiFastapi } from "react-icons/si";
 
 import Tooltip from "../components/Tooltip";
 import { getLastFmTopTracks, getLastFmCurrentTrack, getLastFmTopAlbums } from "../scripts/lastfm";
@@ -171,7 +171,7 @@ function TopTracks()
   return (
     <div className="mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto flex flex-col items-center">
       <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-white-400 bg-black font-bold rounded-2xl px-6 py-2 mx-auto w-fit">
-        Top Tracks This Week...
+        - Top Tracks This Week -
       </h3>
       
       <div className="flex flex-wrap justify-center gap-1">
@@ -242,7 +242,7 @@ function TopAlbums()
   return (
     <div className="rounded-2xl mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] flex items-center justify-center flex-col mx-auto">
       <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-white-400 bg-black font-bold rounded-2xl px-6 py-2">
-        Top Albums This Month...
+        - Top Albums This Month -
       </h3>
       {topAlbums ? topAlbumsGrid : placeholder}
     </div>
@@ -273,12 +273,14 @@ export default function About()
       <div className="mt-10">
         <h3 className="text-3xl text-center mb-6">What I Like to Build with:</h3>
         <div className="flex flex-wrap justify-center gap-8 text-white">
+          <Tooltip text="Windows"><FaWindows className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Python"><FaPython className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Java"><FaJava className="w-16 h-16 wiggle-hover" /></Tooltip>
-          <Tooltip text="C"><SiC className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="C++"><SiCplusplus className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="C#"><TbBrandCSharp className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="JavaScript"><SiJavascript className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="TypeScript"><SiTypescript className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Next.js"><TbBrandNextjs className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="React"><FaReact className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Tailwind CSS"><SiTailwindcss className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="PostgreSQL"><BiLogoPostgresql className="w-16 h-16 wiggle-hover" /></Tooltip>
@@ -292,8 +294,10 @@ export default function About()
         <div className="flex flex-wrap justify-center gap-8 text-white">
           <Tooltip text="Linux"><FaLinux className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Node.js"><FaNodeJs className="w-16 h-16 wiggle-hover" /></Tooltip>
-          <Tooltip text="Next.js"><TbBrandNextjs className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Blazor"><SiBlazor className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="MongoDB"><SiMongodb className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Postman"><SiPostman className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="Bruno"><SiBruno className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Figma"><FaFigma className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Amazon Web Services"><FaAws className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Three.js"><TbBrandThreejs className="w-16 h-16 wiggle-hover" /></Tooltip>
@@ -301,6 +305,7 @@ export default function About()
           <Tooltip text="Unity"><FaUnity className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Roblox Studio"><SiRobloxstudio className="w-16 h-16 wiggle-hover" /></Tooltip>
           <Tooltip text="Android Studio"><SiAndroidstudio className="w-16 h-16 wiggle-hover" /></Tooltip>
+          <Tooltip text="GitKraken"><SiGitkraken className="w-16 h-16 wiggle-hover" /></Tooltip>
         </div>
       </div>
 

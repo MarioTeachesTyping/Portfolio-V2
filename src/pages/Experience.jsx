@@ -32,7 +32,7 @@ export default function Experience()
         "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed by 23%.",
         "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
       ],
-      note: "Extended my internship! Thank you P360 and Sales Team for being my first internship!",
+      note: "Extended my internship! Thank you P360 and Sales Team for being my first opportunity!",
       logo: "/images/experiences/florida-blue.jpg",
       link: "https://www.floridablue.com/",
     },
