@@ -4,6 +4,15 @@
 
 import React from "react";
 
+function renderBold(text) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="text-white font-bold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
 export default function Experience() 
 {
   const experiences = [
@@ -13,11 +22,12 @@ export default function Experience()
       date: "Jan 2026 - Present",
       location: "Lake Buena Vista, FL",
       description: [
-        "Developed secure API key's in C# to connect trigger guard services between frontend and backend systems.",
-        "Refactored Blazor components to enhance responsiveness, accessibility, and error handling, ensuring more reliable user interactions.",
-        "Integrated Splunk logging to monitor trigger guard events, enabling debugging and performance insights.",
+        "Enhanced **C#** REST APIs with a Boolean Trigger Guard naming system improving integrity across **1200+** trigger configurations.",
+        "Developed a **2.0** UI modernization by migrating **30+** legacy **Blazor** & **Telerik** components to a responsive **Bootstrap** framework.",
+        "Containerized microservices with **Docker** x **Kubernetes**, cutting deployment time by **40%** and enabling zero-downtime releases.",
+        "Integrated **Splunk** logging and dashboards to monitor trigger guard events, enabling debugging and performance insights.",
       ],
-      note: "I don't know how I got this opportunity...",
+      note: "One of the best opportunities I could have asked for. Tired but worth it.",
       logo: "/images/experiences/disney.jpg",
       link: "https://thewaltdisneycompany.com/",
     },
@@ -27,10 +37,10 @@ export default function Experience()
       date: "May 2025 - Dec 2025",
       location: "Jacksonville, FL",
       description: [
-        "Built 20% of behavior-driven development functional test cases for the Sales website using Cucumber and Playwright, accelerating release cycles.",
-        "Automated 60% of smoke test cases for the Preferences & Consents website using Playwright, cutting manual testing time for 14+ million users.",
-        "Implemented core QueryGPT features with Python, LangChain, and SQL to improve LLM Q&A accuracy and speed by 23%.",
-        "Validated and optimized LLM Q&A with HTTP testing in Bruno, enhancing performance and query handling.",
+        "Built **20%** of behavior-driven development functional test cases for the Sales website using **Cucumber** and **Playwright**, accelerating release cycles.",
+        "Automated **60%** of smoke test cases for the Preferences & Consents website using **Playwright**, cutting manual testing time for **14+ million** users.",
+        "Implemented core **QueryGPT** features with **Python**, **LangChain**, and **SQL** to improve LLM Q&A accuracy and speed by **23%**.",
+        "Tested LLM Q&A endpoints with **Bruno** to identify and resolve query-handling errors, improving response reliability.",
       ],
       note: "Extended my internship! Thank you P360 and Sales Team for being my first opportunity!",
       logo: "/images/experiences/florida-blue.jpg",
@@ -42,10 +52,10 @@ export default function Experience()
       date: "Aug 2024 - Jan 2026",
       location: "Orlando, FL",
       description: [
-        "Managed a team of 13 to teach 500+ students professional and software development skills in workshops.",
-        "Organized 40+ workshops with sponsor companies and clubs to create internship opportunities for students.",
-        "Introduced new workshop formats that increased participant engagement by 30% compared to previous semesters.",
-        "Collaborated in organizing the 2025 Hackathon where 1500+ registrants, 1000+ hackers, and 15+ sponsors attended.",
+        "Managed a team of **13** to teach **500+** students professional and software development skills in workshops.",
+        "Organized **40+** workshops with sponsor companies and clubs to create internship opportunities for students.",
+        "Introduced new workshop formats that increased participant engagement by **30%** compared to previous semesters.",
+        "Collaborated in organizing the **2025** Hackathon where **1500+** registrants, **1000+** hackers, and **15+** sponsors attended.",
       ],
       note: "The start of it all. Taught me so much and got me so far.",
       logo: "/images/experiences/knight-hacks.jpg",
@@ -57,9 +67,10 @@ export default function Experience()
       date: "Aug 2024 - May 2025",
       location: "Orlando, FL",
       description: [
-        "Conducted Human-Computer Interaction-related user studies to assist in research.",
-        "Helped develop study participant-facing VR systems in Unity, dealing with modeling and simulation.",
+        "Conducted Human-Computer Interaction user studies, supporting experimental design, data collection, and analysis.",
+        "Helped develop study participant-facing VR systems in **Unity**, implementing 3D environments, and simulation workflows.",
         "Collaborated with researchers on papers, optimizing workflow, and enhancing VR systems for user studies.",
+        "Integrated **Meta XR** Toolkit in Unity for hand tracking, 3D gestures, and capturing hand joints as .txt for studies."
       ],
       note: "Amazing research and amazing people!",
       logo: "/images/experiences/ucf-eng.jpg",
@@ -71,9 +82,10 @@ export default function Experience()
       date: "Jan 2025 - May 2025",
       location: "Orlando, FL",
       description: [
-        "Researched AI integration for Physics-Informed Neural Networks to improve computational efficiency.",
-        "Improved PINNs training performance by over 8% through integration of tailored AI/ML techniques in PyTorch.",
-        "Assisted in jet engine experiments, gathering turbulence, vector field, and velocity magnitude data.",
+        "Researched AI integration for Physics-Informed Neural Networks (PINNs) to improve computational efficiency in simulations.",
+        "Improved **PINNs** training performance by over **8%** through integration of tailored AI/ML techniques in **PyTorch**.",
+        "Collaborated on **MATLAB** visualizations to analyze turbulence datasets, including vector fields and velocity magnitude plots.",
+        "Assisted jet engine experiments for **2+** researchers by collecting turbulence, vector field, and velocity magnitude measurements.",
       ],
       note: "I love rocket ships.",
       logo: "/images/experiences/ucf-mec.jpg",
@@ -105,7 +117,7 @@ export default function Experience()
         {experiences.map((exp, i) => (
           <div
             key={i}
-            className="border-2 border-white bg-black text-white p-6 shadow-lg flex flex-col md:flex-row md:justify-between experience-card cursor-pointer"
+            className="border-2 border-white bg-black text-white p-6 shadow-lg flex flex-col md:flex-row md:justify-between md:items-center experience-card cursor-pointer"
             onClick={() => {
               if (exp.link) window.open(exp.link, "_blank", "noopener,noreferrer");
             }}
@@ -122,7 +134,7 @@ export default function Experience()
                 <p className="font-semibold mb-2">I worked on:</p>
                 <ul className="list-disc space-y-1 text-gray-300 text-lg ml-5">
                   {exp.description.map((item, j) => (
-                    <li key={j} className="pl-2">{item}</li>
+                    <li key={j} className="pl-2">{renderBold(item)}</li>
                   ))}
                 </ul>
 
@@ -133,11 +145,11 @@ export default function Experience()
             </div>
 
             {/* Right Side */}
-            <div className="md:w-42 flex flex-col items-center mt-4 md:mt-0">
+            <div className="md:w-54 flex flex-col items-center justify-center mt-4 md:mt-0">
               <img
                 src={exp.logo}
                 alt={`${exp.company} logo`}
-                className="w-44 h-42 object-cover border-3 border-white mb-2"
+                className="w-54 h-54 object-cover border-3 border-white mb-2"
               />
               <div className="text-md text-center">
                 <p>{exp.date}</p>
@@ -150,7 +162,7 @@ export default function Experience()
               <p className="font-semibold mb-2">I worked on:</p>
               <ul className="list-disc space-y-1 text-gray-300 text-lg ml-5">
                 {exp.description.map((item, j) => (
-                  <li key={j} className="pl-2">{item}</li>
+                  <li key={j} className="pl-2">{renderBold(item)}</li>
                 ))}
               </ul>
 

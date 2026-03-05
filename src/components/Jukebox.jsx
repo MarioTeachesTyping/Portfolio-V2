@@ -9,9 +9,9 @@ const Jukebox = forwardRef((
   tracks = [
     "Space Junk Road.mp3",
     "Space Trip Steps.mp3",
+    "SIMPLE AND CLEAN -PLANITb Remix-.mp3",
     "Beneath the Mask -rain-.mp3",
     "Darkness Time.mp3",
-    "SIMPLE AND CLEAN -PLANITb Remix-.mp3",
     "Pause Menu (Pico).mp3",
     "Fell In Luv.mp3",
     "Nintendo (Remix).mp3",
@@ -21,9 +21,9 @@ const Jukebox = forwardRef((
   trackImages = {
     "Space Junk Road.mp3": "/images/albums/mario_galaxy_ost.jpg",
     "Space Trip Steps.mp3": "/images/albums/sa2_ost.jpg",
+    "SIMPLE AND CLEAN -PLANITb Remix-.mp3": "/images/albums/kh1.5_ost.jpg",
     "Beneath the Mask -rain-.mp3": "/images/albums/p5_ost.jpg",
     "Darkness Time.mp3": "/images/albums/dgrv3_ost_white.jpg",
-    "SIMPLE AND CLEAN -PLANITb Remix-.mp3": "/images/albums/kh1.5_ost.jpg",
     "Pause Menu (Pico).mp3": "/images/albums/fnf_vol3_ost.jpg",
     "Fell In Luv.mp3": "/images/albums/die_lit.png",
     "Nintendo (Remix).mp3": "/images/albums/nintendo_remix.jpg",
@@ -33,9 +33,9 @@ const Jukebox = forwardRef((
   trackArtists = {
     "Space Junk Road.mp3": "Mahito Yokota",
     "Space Trip Steps.mp3": "SEGA SOUND TEAM, Tomoya Ohtani",
+    "SIMPLE AND CLEAN -PLANITb Remix-.mp3": "Utada Hikaru",
     "Beneath the Mask -rain-.mp3": "Lyn",
     "Darkness Time.mp3": "Masafumi Takada",
-    "SIMPLE AND CLEAN -PLANITb Remix-.mp3": "Utada Hikaru",
     "Pause Menu (Pico).mp3": "Funkin' Sound Team, Kawai Sprite",
     "Fell In Luv.mp3": "Playboi Carti, Bryson Tiller",
     "Nintendo (Remix).mp3": "jalenrekt, QKReign, perfect!",
