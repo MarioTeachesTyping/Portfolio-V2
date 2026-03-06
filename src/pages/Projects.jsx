@@ -124,15 +124,6 @@ export default function Projects()
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
     },
-    {
-      name: "Leetatro",
-      image: "/images/glitch.gif",
-      description: "LeetCode x Balatro. So creative. Used to be LeetBytes.",
-      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Tailwind CSS"><SiTailwindcss key="tailwindcss" /></Tooltip>, 
-             <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, <Tooltip text="Shadcn"><SiShadcnui key="shadcnui" /></Tooltip>, <Tooltip text="LeetCode"><SiLeetcode key="leetcode" /></Tooltip>,
-      ],
-      link: "https://github.com/MarioTeachesTyping/Leetatro"
-    },
   ];
 
    return (
