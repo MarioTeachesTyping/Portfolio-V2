@@ -5,12 +5,12 @@
 import React from 'react';
 
 import { FaUnity } from "react-icons/fa6";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoFlask } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaNodeJs, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare } from 'react-icons/fa';
-import { SiOpencv, SiMediapipe, SiFlask, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender, SiWebgl, SiVite, 
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiShadcnui, SiLeetcode } from 'react-icons/si';
+import { FaPython, FaReact, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare, FaAngular } from 'react-icons/fa';
+import { SiOpencv, SiMediapipe, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender,
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs } from 'react-icons/si';
 
 import Tooltip from "../components/Tooltip";
 
@@ -37,7 +37,7 @@ export default function Projects()
       badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
-             <Tooltip text="Flask"><SiFlask key="flask" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>
+             <Tooltip text="Flask"><BiLogoFlask key="flask" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/formify-k8vl4r"
@@ -46,8 +46,6 @@ export default function Projects()
       name: "CivicLens",
       image: "/videos/projects/civiclens.mp4",
       is_video: true,
-      // badge: "ColorStack Winter Winner",
-      // badge_color: "border-orange-200 text-orange-200",
       description: "Built a civic transparency platform aggregating data for congressional representatives using reliable government sources, and responsible AI.",
       tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, <Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, 
              <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>
@@ -81,8 +79,8 @@ export default function Projects()
       image: "/videos/projects/hot-dog.mp4",
       is_video: true,
       description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
-      tech: [<Tooltip text="NVIDIA"><SiNvidia key="nvidia" /></Tooltip>, <Tooltip text="Google ADK"><FaGoogle key="google" /></Tooltip>,
-             <Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>
+      tech: [<Tooltip text="NVIDIA JetBot"><SiNvidia key="nvidia" /></Tooltip>, <Tooltip text="Google ADK"><FaGoogle key="google" /></Tooltip>, <Tooltip text="YOLO"><SiYolo key="yolo" /></Tooltip>,
+             <Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>,
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
@@ -110,8 +108,8 @@ export default function Projects()
       name: "MyGameList",
       image: "/images/projects/mygamelist.jpg",
       description: "Interactive webpage enabling users to rank video games and share customizable profiles.",
-      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, 
-             <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, <Tooltip text="AWS"><FaAws key="aws" /></Tooltip>, <Tooltip text="Prisma"><SiPrisma key="prisma" /></Tooltip>
+      tech: [<Tooltip text="Angular"><FaAngular key="angular" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, <Tooltip text="NestJS"><SiNestjs key="nestjs" /></Tooltip>,
+             <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, <Tooltip text="Prisma"><SiPrisma key="prisma" /></Tooltip>, <Tooltip text="AWS"><FaAws key="aws" /></Tooltip>
       ]
     },
     {
