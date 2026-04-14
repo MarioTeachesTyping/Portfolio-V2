@@ -8,9 +8,9 @@ import { FaUnity } from "react-icons/fa6";
 import { BiLogoPostgresql, BiLogoFlask } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
-import { FaPython, FaReact, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare, FaAngular } from 'react-icons/fa';
+import { FaPython, FaReact, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare, FaAngular, FaRobot } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender,
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs } from 'react-icons/si';
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs, SiTa } from 'react-icons/si';
 
 import Tooltip from "../components/Tooltip";
 
@@ -86,13 +86,15 @@ export default function Projects()
       link: "https://github.com/ENG4060-C/final-project"
     },
     {
-      name: "MarioGPT",
-      image: "/images/projects/mario.png",
-      description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
-      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="Llama"><SiOllama key="llama" /></Tooltip>, <Tooltip text="LangChain"><SiLangchain key="langchain" /></Tooltip>, 
-             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="MongoDB"><SiMongodb key="mongodb" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>
+      name: "Lock-In Buddy",
+      image: "/videos/projects/lock-in-buddy.mp4",
+      is_video: true,
+      description: "A productivity-focused robot buddy paired with a desktop app designed to help users stay locked in!",
+      tech: [<Tooltip text="3D Printing & Screen"><FaRobot key="robot" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Tauri"><SiTauri key="tauri" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>,
       ],
-      link: "https://github.com/MarioTeachesTyping/MarioGPT"
+      team: { icon: <RiTeamLine />, text: "Team Size: 3" },
+      link: "https://github.com/MDiopp/Lock-in-Buddy"
     },
     {
       name: "Fruit Slayer",
@@ -103,6 +105,15 @@ export default function Projects()
              <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>
       ],
       link: "https://devpost.com/software/fruit-slayer"
+    },
+    {
+      name: "MarioGPT",
+      image: "/images/projects/mario.png",
+      description: "Full-stack AI chatbot focused on the Mario franchise. Supports conversational question & answer, and more.",
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="Llama"><SiOllama key="llama" /></Tooltip>, <Tooltip text="LangChain"><SiLangchain key="langchain" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="MongoDB"><SiMongodb key="mongodb" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>
+      ],
+      link: "https://github.com/MarioTeachesTyping/MarioGPT"
     },
     {
       name: "MyGameList",
