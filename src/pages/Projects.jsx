@@ -10,7 +10,7 @@ import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
 import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
 import { FaPython, FaReact, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare, FaAngular, FaRobot } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender,
-         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs, SiTa } from 'react-icons/si';
+         SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs, SiTauri } from 'react-icons/si';
 
 import Tooltip from "../components/Tooltip";
 
