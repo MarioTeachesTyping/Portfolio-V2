@@ -43,6 +43,19 @@ export default function Projects()
       link: "https://devpost.com/software/formify-k8vl4r"
     },
     {
+      name: "Lock-In Buddy",
+      image: "/videos/projects/lock-in-buddy.mp4",
+      is_video: true,
+      badge: "KH Project Checkpoint Winner",
+      badge_color: "border-purple-200 text-purple-200",
+      description: "A productivity-focused robot buddy paired with a desktop app designed to help users stay locked in!",
+      tech: [<Tooltip text="Screen w/ 3D Printed BMO"><FaRobot key="robot" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Tauri"><SiTauri key="tauri" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>,
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 3" },
+      link: "https://github.com/MDiopp/Lock-in-Buddy"
+    },
+    {
       name: "CivicLens",
       image: "/videos/projects/civiclens.mp4",
       is_video: true,
@@ -84,17 +97,6 @@ export default function Projects()
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
-    },
-    {
-      name: "Lock-In Buddy",
-      image: "/videos/projects/lock-in-buddy.mp4",
-      is_video: true,
-      description: "A productivity-focused robot buddy paired with a desktop app designed to help users stay locked in!",
-      tech: [<Tooltip text="3D Printing & Screen"><FaRobot key="robot" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
-             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Tauri"><SiTauri key="tauri" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>,
-      ],
-      team: { icon: <RiTeamLine />, text: "Team Size: 3" },
-      link: "https://github.com/MDiopp/Lock-in-Buddy"
     },
     {
       name: "Fruit Slayer",
