@@ -22,10 +22,10 @@ export default function Experience()
       date: "Jan 2026 - Present",
       location: "Lake Buena Vista, FL",
       description: [
-        "Enhanced **C#** REST APIs with a Boolean Trigger Guard naming system improving integrity across **1200+** trigger configurations.",
-        "Developed a **2.0** UI modernization by migrating **30+** legacy **Blazor** & **Telerik** components to a responsive **Bootstrap** framework.",
+        "Reduced false-positive alerts by **82%** through **C#** REST APIs, improving signal accuracy for real-time ride system monitoring.",
+        "Migrated **40GB+ MSSQL** database to **PostgreSQL**, preserving **1200+** trigger configurations and maintaining zero data loss.",
         "Containerized microservices with **Docker** x **Kubernetes**, cutting deployment time by **40%** and enabling zero-downtime releases.",
-        "Integrated **Splunk** logging and dashboards to monitor trigger guard events, enabling debugging and performance insights.",
+        "Developed a 2.0 UI modernization by migrating **30+** legacy **Blazor** & **Telerik** components to a responsive **Bootstrap** framework.",
       ],
       note: "One of the best opportunities I could have asked for. Tired but worth it.",
       logo: "/images/experiences/disney.jpg",
