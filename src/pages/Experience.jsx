@@ -17,9 +17,22 @@ export default function Experience()
 {
   const experiences = [
     {
+      company: "F5",
+      role: "Software Engineer Intern",
+      date: "Jun 2026 - Present",
+      location: "Seattle, WA",
+      description: [
+        "Interesting agentic work.",
+        "On the Customer Facing Team.",
+      ],
+      note: "Can't believe it still. First internship out of state and surprised I made it this far.",
+      logo: "/images/experiences/f5.jpg",
+      link: "https://www.f5.com/",
+    },
+    {
       company: "The Walt Disney Company",
       role: "Software Engineer Intern",
-      date: "Jan 2026 - Present",
+      date: "Jan 2026 - Jun 2026",
       location: "Lake Buena Vista, FL",
       description: [
         "Reduced false-positive alerts by **82%** through **C#** REST APIs, improving signal accuracy for real-time ride system monitoring.",
