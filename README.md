@@ -49,7 +49,7 @@ Portfolio
     └── v2.41   - Project Badges
     └── v2.42   - AFK Model Spin
     └── v2.43   - Last Played & Top Albums
-    └── v2.43   - Record Player Music Page
+    └── v2.44   - Record Player Music Page
 ```
 
 ## Notes

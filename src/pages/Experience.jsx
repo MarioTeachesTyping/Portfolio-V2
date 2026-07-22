@@ -22,8 +22,10 @@ export default function Experience()
       date: "Jun 2026 - Present",
       location: "Seattle, WA",
       description: [
-        "Interesting agentic work.",
-        "On the Customer Facing Team.",
+        "Developed **Python** agent that analyzes multiple BIG-IP diagnostic snapshots in parallel, reducing troubleshooting workflows.",
+        "Engineered SSH stdio MCP transport, cutting cross-QKView feature comparison from **3 minutes** to **10 seconds** across **2** devices.",
+        "Implemented an MCP server that extracts targeted configuration signals from **12,000+** line config files using keyword navigation.",
+        " Designed a brace-depth-aware config parser that accurately counts object declarations across **8** traffic types without false positives.",
       ],
       note: "Can't believe it still. First internship out of state and surprised I made it this far.",
       logo: "/images/experiences/f5.jpg",
