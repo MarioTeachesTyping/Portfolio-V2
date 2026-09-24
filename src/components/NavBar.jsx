@@ -90,7 +90,7 @@ export default function NavBar()
           </div>
         </div>
 
-        <div className="hidden md:flex space-x-8 text-lg items-center">
+        <div className="hidden md:flex flex-1 justify-center space-x-8 text-lg items-center">
           <button className="hover:bg-white/15" onClick={() => setShowAbout(true)}>
             About
           </button>
@@ -103,7 +103,9 @@ export default function NavBar()
           <button className="hover:bg-white/15" onClick={openMusic}>
             Music
           </button>
+        </div>
 
+        <div className="hidden md:flex items-center space-x-8">
           <a
             href="/resume.html"
             target="_blank"
