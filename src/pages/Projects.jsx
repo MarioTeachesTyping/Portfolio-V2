@@ -5,32 +5,37 @@
 import React from 'react';
 
 import { FaUnity } from "react-icons/fa6";
+import { IoHardwareChip } from "react-icons/io5";
 import { BiLogoPostgresql, BiLogoFlask } from "react-icons/bi";
 import { TbBrandThreejs, TbBrandNextjs } from "react-icons/tb";
-import { RiTeamLine, RiGeminiFill, RiSupabaseFill } from "react-icons/ri";
+import { RiTeamLine, RiGeminiFill, RiSupabaseFill, RiQwenAiFill } from "react-icons/ri";
 import { FaPython, FaReact, FaDocker, FaGoogle, FaMedal, FaJava, FaAws, FaLastfmSquare, FaAngular, FaRobot, FaNodeJs } from 'react-icons/fa';
 import { SiOpencv, SiMediapipe, SiCplusplus, SiArduino, SiOllama, SiLangchain, SiTailwindcss, SiJavascript, SiTypescript, SiPrisma, SiBlender,
          SiNginx, SiMinio, SiExpress, SiMongodb, SiFastapi, SiPosthog, SiMapbox, SiLeaflet, SiNvidia, SiAndroidstudio, SiYolo, SiNestjs, SiTauri,
-         SiCodemirror, SiZod } from 'react-icons/si';
+         SiCodemirror, SiZod, SiNumpy, SiQwen } from 'react-icons/si';
 
 import Tooltip from "../components/Tooltip";
 
 export default function Projects() 
 {
   const projects = [
-    // {
-    //   name: "Glint",
-    //   image: "/videos/projects/careerwise.mp4",
-    //   is_video: true,
-    //   badge: "Knight Hacks 9 Winner",
-    //   badge_color: "border-purple-200 text-purple-200",
-    //   description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
-    //   tech: [<Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="PostHog"><SiPosthog key="posthog" /></Tooltip>, 
-    //          <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>, <Tooltip text="Leaflet"><SiLeaflet key="leaflet" /></Tooltip>
-    //   ],
-    //   team: { icon: <RiTeamLine />, text: "Team Size: 7" },
-    //   link: "https://github.com/MarioTeachesTyping/CareerWise"
-    // },
+    {
+      name: "Glint",
+      image: "/videos/projects/glint.mp4",
+      is_video: true,
+      badge: "Knight Hacks 9 Winner",
+      badge_color: "border-purple-200 text-purple-200",
+      description: "An eye-movement communication prototype for people who can't speak or move using EOG sensors, glasses with a OLED screen, and a web application.",
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, 
+             <Tooltip text="NumPy"><SiNumpy key="numpy" /></Tooltip>, 
+             <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>, 
+             <Tooltip text="Qwen"><SiQwen key="qwen" /></Tooltip>, 
+             <Tooltip text="NVIDIA Jetson"><SiNvidia key="nvidia" /></Tooltip>, 
+             <Tooltip text="EOG Sensors & Glasses"><IoHardwareChip key="hardware" /></Tooltip>
+      ],
+      team: { icon: <RiTeamLine />, text: "Team Size: 4" },
+      link: "https://devpost.com/software/nuggies"
+    },
     {
       name: "CareerWise",
       image: "/videos/projects/careerwise.mp4",
@@ -38,8 +43,12 @@ export default function Projects()
       badge: "JPMC Code for Good Winner",
       badge_color: "border-blue-200 text-blue-200",
       description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
-      tech: [<Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="PostHog"><SiPosthog key="posthog" /></Tooltip>, 
-             <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>, <Tooltip text="Leaflet"><SiLeaflet key="leaflet" /></Tooltip>
+      tech: [<Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, 
+             <Tooltip text="PostHog"><SiPosthog key="posthog" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, 
+             <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>, 
+             <Tooltip text="Leaflet"><SiLeaflet key="leaflet" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 7" },
       link: "https://github.com/MarioTeachesTyping/CareerWise"
@@ -50,8 +59,12 @@ export default function Projects()
       badge: "Knight Hacks 7 Winner",
       badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
-      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
-             <Tooltip text="Flask"><BiLogoFlask key="flask" /></Tooltip>, <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, 
+             <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, 
+             <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="Flask"><BiLogoFlask key="flask" /></Tooltip>, 
+             <Tooltip text="C++"><SiCplusplus key="cplusplus" /></Tooltip>, 
+             <Tooltip text="Arduino"><SiArduino key="arduino" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/formify-k8vl4r"
@@ -63,8 +76,12 @@ export default function Projects()
       // badge: "KH Project Checkpoint Winner",
       // badge_color: "border-purple-200 text-purple-200",
       description: "A productivity-focused robot buddy paired with a desktop app designed to help users stay locked in!",
-      tech: [<Tooltip text="Screen w/ 3D Printed BMO"><FaRobot key="robot" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
-             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Tauri"><SiTauri key="tauri" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>,
+      tech: [<Tooltip text="Screen w/ 3D Printed BMO"><FaRobot key="robot" /></Tooltip>, 
+             <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, 
+             <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, 
+             <Tooltip text="Tauri"><SiTauri key="tauri" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>,
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 3" },
       link: "https://github.com/MDiopp/Lock-in-Buddy"
@@ -74,8 +91,12 @@ export default function Projects()
       image: "/videos/projects/civiclens.mp4",
       is_video: true,
       description: "Built a civic transparency platform aggregating data for congressional representatives using reliable government sources, and responsible AI.",
-      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, <Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, 
-             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>
+      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, 
+             <Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, 
+             <Tooltip text="PostgreSQL"><BiLogoPostgresql key="postgresql" /></Tooltip>, 
+             <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, 
+             <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, 
+             <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/civiclens-xhi3ym"
@@ -85,8 +106,12 @@ export default function Projects()
       image: "/videos/projects/potara.mp4",
       is_video: true,
       description: "Draw your heart out with our art assistance tool which breaks down reference images into simple shapes with live feedback courtesy of Art Mentor, Shelly.",
-      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="NGINX"><SiNginx key="nginx" /></Tooltip>,
-             <Tooltip text="MinIO"><SiMinio key="minio" /></Tooltip>, <Tooltip text="Express.js"><SiExpress key="express" /></Tooltip>, <Tooltip text="Docker"><FaDocker key="docker" /></Tooltip>
+      tech: [<Tooltip text="Google Gemini"><RiGeminiFill key="gemini" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, 
+             <Tooltip text="NGINX"><SiNginx key="nginx" /></Tooltip>,
+             <Tooltip text="MinIO"><SiMinio key="minio" /></Tooltip>, 
+             <Tooltip text="Express.js"><SiExpress key="express" /></Tooltip>, 
+             <Tooltip text="Docker"><FaDocker key="docker" /></Tooltip>
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://devpost.com/software/potara"
@@ -106,8 +131,12 @@ export default function Projects()
       image: "/videos/projects/hot-dog.mp4",
       is_video: true,
       description: "Hot Dog can complete open-ended tasks using his multi-agent autonomous robot system and YOLOE vision to plan, sense, and act in real time.",
-      tech: [<Tooltip text="NVIDIA JetBot"><SiNvidia key="nvidia" /></Tooltip>, <Tooltip text="Google ADK"><FaGoogle key="google" /></Tooltip>, <Tooltip text="YOLO"><SiYolo key="yolo" /></Tooltip>,
-             <Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>,
+      tech: [<Tooltip text="NVIDIA JetBot"><SiNvidia key="nvidia" /></Tooltip>, 
+             <Tooltip text="Google ADK"><FaGoogle key="google" /></Tooltip>, 
+             <Tooltip text="YOLO"><SiYolo key="yolo" /></Tooltip>,
+             <Tooltip text="Python"><FaPython key="python" /></Tooltip>, 
+             <Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, 
+             <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>,
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
@@ -117,8 +146,11 @@ export default function Projects()
       image: "/videos/projects/fruit-slayer.mp4",
       is_video: true,
       description: "Play Fruit Ninja in real life. Use your finger to slice the fruits and avoid the bombs to get a high score!",
-      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
-             <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>
+      tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, 
+             <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, 
+             <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, 
+             <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>
       ],
       link: "https://devpost.com/software/fruit-slayer"
     },
@@ -127,8 +159,12 @@ export default function Projects()
       image: "/videos/projects/leetbytes.mp4",
       is_video: true,
       description: "Gamified LeetCode. Play minigames to unlock hints to help you solve questions.",
-      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, 
-             <Tooltip text="Node.js"><FaNodeJs key="nodejs" /></Tooltip>, <Tooltip text="CodeMirror"><SiCodemirror key="codemirror" /></Tooltip>, <Tooltip text="Zod"><SiZod key="zod" /></Tooltip>
+      tech: [<Tooltip text="Next.js"><TbBrandNextjs key="nextjs" /></Tooltip>, 
+             <Tooltip text="React"><FaReact key="react" /></Tooltip>, 
+             <Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>, 
+             <Tooltip text="Node.js"><FaNodeJs key="nodejs" /></Tooltip>, 
+             <Tooltip text="CodeMirror"><SiCodemirror key="codemirror" /></Tooltip>, 
+             <Tooltip text="Zod"><SiZod key="zod" /></Tooltip>
       ],
       link: "https://github.com/MarioTeachesTyping/LeetBytes"
     },
@@ -154,8 +190,12 @@ export default function Projects()
       image: "/videos/projects/portfolio.mp4",
       is_video: true,
       description: "You're looking at it.",
-      tech: [<Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Tailwind CSS"><SiTailwindcss key="tailwindcss" /></Tooltip>, <Tooltip text="JavaScript"><SiJavascript key="javascript" /></Tooltip>, 
-             <Tooltip text="Three.js"><TbBrandThreejs key="threejs" /></Tooltip>, <Tooltip text="Blender"><SiBlender key="blender" /></Tooltip>, <Tooltip text="Last.fm"><FaLastfmSquare key="lastfm" /></Tooltip>
+      tech: [<Tooltip text="React"><FaReact key="react" /></Tooltip>, 
+             <Tooltip text="Tailwind CSS"><SiTailwindcss key="tailwindcss" /></Tooltip>, 
+             <Tooltip text="JavaScript"><SiJavascript key="javascript" /></Tooltip>, 
+             <Tooltip text="Three.js"><TbBrandThreejs key="threejs" /></Tooltip>, 
+             <Tooltip text="Blender"><SiBlender key="blender" /></Tooltip>, 
+             <Tooltip text="Last.fm"><FaLastfmSquare key="lastfm" /></Tooltip>
       ],
       link: "https://github.com/MarioTeachesTyping/portfolio"
     },
