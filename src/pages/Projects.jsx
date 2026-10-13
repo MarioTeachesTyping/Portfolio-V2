@@ -18,6 +18,19 @@ import Tooltip from "../components/Tooltip";
 export default function Projects() 
 {
   const projects = [
+    // {
+    //   name: "Glint",
+    //   image: "/videos/projects/careerwise.mp4",
+    //   is_video: true,
+    //   badge: "Knight Hacks 9 Winner",
+    //   badge_color: "border-purple-200 text-purple-200",
+    //   description: "All-in-one data visualization dashboard displaying multi-county statistics, autonomous report updates, and more to improve economic mobility.",
+    //   tech: [<Tooltip text="Supabase"><RiSupabaseFill key="supabase" /></Tooltip>, <Tooltip text="FastAPI"><SiFastapi key="fastapi" /></Tooltip>, <Tooltip text="PostHog"><SiPosthog key="posthog" /></Tooltip>, 
+    //          <Tooltip text="React"><FaReact key="react" /></Tooltip>, <Tooltip text="Mapbox"><SiMapbox key="mapbox" /></Tooltip>, <Tooltip text="Leaflet"><SiLeaflet key="leaflet" /></Tooltip>
+    //   ],
+    //   team: { icon: <RiTeamLine />, text: "Team Size: 7" },
+    //   link: "https://github.com/MarioTeachesTyping/CareerWise"
+    // },
     {
       name: "CareerWise",
       image: "/videos/projects/careerwise.mp4",
@@ -34,7 +47,7 @@ export default function Projects()
     {
       name: "Formify",
       image: "/images/projects/formify.jpg",
-      badge: "Knight Hacks VII Winner",
+      badge: "Knight Hacks 7 Winner",
       badge_color: "border-yellow-200 text-yellow-200",
       description: "Formify is a web-accessible program that can monitor a users motion in real time and provide haptic feedback to guide them through prescribed exercises.",
       tech: [<Tooltip text="Python"><FaPython key="python" /></Tooltip>, <Tooltip text="OpenCV"><SiOpencv key="opencv" /></Tooltip>, <Tooltip text="MediaPipe"><SiMediapipe key="mediapipe" /></Tooltip>, 
