@@ -12,6 +12,7 @@ import { FaPython, FaJava, FaReact, FaFigma, FaDocker, FaAws, FaLinux, FaNodeJs,
 import { SiKubernetes, SiJavascript, SiTypescript, SiTailwindcss, SiBlender, SiCplusplus, SiAndroidstudio, SiMongodb, SiRobloxstudio, SiFastapi } from "react-icons/si";
 
 import Tooltip from "../components/Tooltip";
+import GameBox from "../components/GameBox";
 import { getLastFmTopTracks, getLastFmCurrentTrack, getLastFmTopAlbums } from "../scripts/lastfm";
 import { searchSpotifyTrack } from "../scripts/spotify";
 
@@ -249,7 +250,44 @@ function TopAlbums()
   );
 }
 
-export default function About() 
+const TOP_GAMES = [
+  { name: "Super Mario Galaxy", studio: "Nintendo", key: "smg", frontRatio: 1531 / 2156, spineRatio: 158 / 2141, caseColor: "#f2f2f2" },
+  { name: "Cuphead", studio: "Studio MDHR", key: "cuphead", frontRatio: 2958 / 3456, spineRatio: 256 / 3442, caseColor: "#107c10" },
+  { name: "Persona 5", studio: "Atlus", key: "p5", frontRatio: 1530 / 1904, spineRatio: 159 / 1891, caseColor: "#1d4fa0" },
+];
+
+function TopGames()
+{
+  return (
+    <div className="mt-12 mb-6 max-w-[100%] sm:max-w-[90%] lg:max-w-[90%] mx-auto flex flex-col items-center">
+      <h3 className="flex items-center justify-center gap-2 text-[1.5rem] mb-4 text-white-400 bg-black font-bold rounded-2xl px-6 py-2 mx-auto w-fit">
+        - Top 3 Games -
+      </h3>
+
+      <div className="flex flex-wrap justify-center gap-4">
+        {TOP_GAMES.map((game, index) => (
+          <div key={game.key} className="flex items-center flex-col">
+            <GameBox
+              front={`/images/games/${game.key}_front.jpg`}
+              back={`/images/games/${game.key}_back.jpg`}
+              spine={`/images/games/${game.key}_spine.jpg`}
+              frontRatio={game.frontRatio}
+              spineRatio={game.spineRatio}
+              caseColor={game.caseColor}
+            />
+            <p className="font-bold text-center flex flex-col text-[1rem] px-2 mt-2">
+              <span className="font-normal text-[0.9rem] text-gray-400">#{index + 1}</span>
+              {game.name}
+            </p>
+            <p className="text-gray-300 text-center text-[0.95rem] px-2 pb-2">{game.studio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function About()
 {
   return (
     <div>
@@ -314,6 +352,9 @@ export default function About()
 
       {/* Top Albums */}
       <TopAlbums />
+
+      {/* Top Games */}
+      <TopGames />
     </div>
   );
 }
