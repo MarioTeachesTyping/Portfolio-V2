@@ -84,10 +84,10 @@ export default function Projects()
              <Tooltip text="React"><FaReact key="react" /></Tooltip>,
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 3" },
-      link: "https://github.com/MDiopp/Lock-in-Buddy"
+      link: "https://devpost.com/software/lock-in-buddy"
     },
     {
-      name: "CivicLens",
+      name: "Civiclens",
       image: "/videos/projects/civiclens.mp4",
       is_video: true,
       description: "Built a civic transparency platform aggregating data for congressional representatives using reliable government sources, and responsible AI.",
@@ -140,6 +140,15 @@ export default function Projects()
       ],
       team: { icon: <RiTeamLine />, text: "Team Size: 4" },
       link: "https://github.com/ENG4060-C/final-project"
+    },
+    {
+      name: "VS Code Mario",
+      image: "/videos/projects/vscode-mario.mp4",
+      is_video: true,
+      description: "Mario characters hanging out in your editor to boost productivity.",
+      tech: [<Tooltip text="TypeScript"><SiTypescript key="typescript" /></Tooltip>,
+      ],
+      link: "https://github.com/MarioTeachesTyping/vscode-mario"
     },
     {
       name: "Fruit Slayer",
